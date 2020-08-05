@@ -1,7 +1,5 @@
 .App {
   min-height: 100vh;
-  background: var(--background);
-  --background: #ebebeb;
 }
 
 /*
@@ -11,60 +9,45 @@
 */
 
 body {
+  background-image: url("/websitebackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: block;
   margin: 0px;
   font-family: "Lato", sans-serif;
+  color: white;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 65px;
-}
-
-.header-h1 {
-  flex: 1;
-  text-align: left;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
+.main-header-logo {
   font-family: "Playfair Display", sans-serif;
 }
 
-ul {
-  list-style: none;
+.container {
+  width: 960px;
+  max-width: 100%;
+
+  margin: 0 auto;
 }
 
-.nav {
-  flex: 1;
+.main-header .container {
   display: flex;
-  justify-content: flex-end;
-}
-
-.nav-list {
-  display: flex;
-  margin-right: 2rem;
-}
-
-.nav-list > li {
-  margin-right: 50px;
-  font-size: 16px;
-}
-
-/*
-.nav-list > li:last-child {
-  margin-right: 0px;
-}
-*/
-
-.menu {
-  text-align: right;
-  z-index: 1000;
-  width: 100%;
-  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: sticky;
   top: 0;
-  height: 65px;
+}
+
+.main-nav ul {
+  margin: 1em 0 0.5em;
+  text-align: center;
+}
+.main-nav li {
+  display: inline;
+}
+.main-nav a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
 }
 
 .body-h2 {
@@ -80,7 +63,14 @@ ul {
 }
 
 .description {
+  width: 500px;
 }
 
 .check-out-work-label {
+}
+
+@media (min-width: 960px) {
+  .main-header .container {
+    justify-content: space-between;
+  }
 }
