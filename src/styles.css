@@ -1,0 +1,86 @@
+.App {
+  min-height: 100vh;
+  background: var(--background);
+  --background: #ebebeb;
+}
+
+/*
+* {
+  border: 1px solid red !important;
+}
+*/
+
+body {
+  display: block;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.header-h1 {
+  flex: 1;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  font-family: "Playfair Display", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list > li {
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+/*
+.nav-list > li:last-child {
+  margin-right: 0px;
+}
+*/
+
+.menu {
+  text-align: right;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 65px;
+}
+
+.body-h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.body-h3 {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.description {
+}
+
+.check-out-work-label {
+}
