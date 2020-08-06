@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   min-height: 100vh;
   --accent-red: hsl(356deg 86% 55%);
@@ -39,10 +43,11 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: sticky;
+  position: fixed;
   top: 0;
   padding-left: 32px;
   padding-right: 32px;
+  width: 100%;
 }
 
 .main-nav ul {
@@ -57,7 +62,7 @@ body {
 .main-nav a {
   display: inline-block;
   padding: 0.5em 1.5em;
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 

@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 
 export default function App() {
+  const [scrollOffSet, setScrollOffSet] = useState(0);
+
+  useEffect(() => {
+    let handler = (e) => setScrollOffSet(window.scrollY);
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
+
+  let headerAlpha = Math.min(0.5, scrollOffSet / 300);
+  let menuBrightness = Math.min(255, scrollOffSet);
+
   return (
     <div className="App">
       <a id="top" />
-      <header className="main-header">
+      <header
+        className="main-header"
+        style={{ background: `rgba(0,0,0,${headerAlpha})` }}
+      >
         <div className="main-header-logo">
           <a href="#top">B.</a>
         </div>
         <nav className="main-nav">
-          <ul className="main-nav-list">
+          <ul
+            className="main-nav-list"
+            style={{
+              color: `rgb(${menuBrightness}, ${menuBrightness}, ${menuBrightness})`
+            }}
+          >
             <li>
-              <a href="#">Portfolio</a>
+              <a href="#page2">Portfolio</a>
             </li>
             <li>
               <a href="#">About</a>
