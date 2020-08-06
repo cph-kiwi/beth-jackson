@@ -19,7 +19,7 @@ body {
 }
 
 .intro {
-  background-image: url("/websitebackground.png");
+  background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
