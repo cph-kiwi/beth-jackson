@@ -226,6 +226,10 @@ body {
   height: 32px;
 }
 
+.social-container img {
+  max-height: 100%;
+}
+
 @media (max-width: 660px) {
   .main-header {
     padding-left: 20px;

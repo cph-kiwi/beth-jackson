@@ -116,6 +116,13 @@ export default function App() {
               />{" "}
             </a>
           </div>
+          <div className="footer">
+            <p className="footer-p">
+              This site is hand-crafted, with care.
+              <br />
+              Copyright © Beth Jackson.
+            </p>
+          </div>
         </div>
       </div>
     </div>
