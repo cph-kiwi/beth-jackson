@@ -5,6 +5,8 @@
 .App {
   min-height: 100vh;
   --accent-red: hsl(356deg 86% 55%);
+  --darkgrey: hsl(230deg 5% 44%);
+  --lightgrey-background: hsla(230, 7%, 97%, 1);
 }
 
 /*
@@ -132,7 +134,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: darkgrey;
+  color: var(--darkgrey);
   width: 400px;
 }
 
@@ -148,6 +150,7 @@ body {
 }
 
 .about-container {
+  background: var(--lightgrey-background);
   padding-left: 64px;
   padding-top: 76px;
   background-size: cover;
@@ -174,7 +177,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: darkgrey;
+  color: var(--darkgrey);
   width: 400px;
 }
 
@@ -201,11 +204,20 @@ body {
   font-weight: 900;
 }
 
+.contact-h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-h3 a:hover {
+  color: var(--accent-red);
+}
+
 .contact-p {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: darkgrey;
+  color: var(--darkgrey);
   width: 400px;
 }
 
@@ -218,6 +230,9 @@ body {
   .main-header {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .hide-element {
+    display: none;
   }
   .main-nav ul {
     display: flex;

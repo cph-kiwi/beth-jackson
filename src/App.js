@@ -30,16 +30,16 @@ export default function App() {
               color: `rgb(${menuBrightness}, ${menuBrightness}, ${menuBrightness})`
             }}
           >
-            <li>
+            <li className="hide-element">
               <a href="#page2">Portfolio</a>
             </li>
-            <li>
+            <li className="hide-element">
               <a href="#about">About</a>
             </li>
             <li>
               <a href="#">Resume</a>
             </li>
-            <li>
+            <li className="hide-element">
               <a href="#">Blog</a>
             </li>
             <li>
@@ -95,7 +95,11 @@ export default function App() {
       <div className="contact" id="contact">
         <div className="contact-container">
           <h5 className="contact-h5">Contact me</h5>
-          <h3 className="contact-h3">beth.jack@gmail.com</h3>
+          <h3 className="contact-h3">
+            <a href="mailto:beth.jack@gmail.com" target="_blank">
+              beth.jack@gmail.com
+            </a>
+          </h3>
           <p className="contact-p">
             I am always keen to collaborate. I'm hoping to find a permanent
             position in the tech sector. Let's get in touch.
