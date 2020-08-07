@@ -147,10 +147,77 @@ body {
   color: var(--accent-red);
 }
 
+.about-container {
+  padding-left: 64px;
+  padding-top: 76px;
+  background-size: cover;
+  display: block;
+  min-height: 100vh;
+}
+
+.about-h5 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.about-p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: darkgrey;
+  width: 400px;
+}
+
+.contact-container {
+  padding-left: 64px;
+  padding-top: 76px;
+  background-size: cover;
+  display: block;
+  min-height: 100vh;
+}
+
+.contact-h5 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contact-h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.contact-p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: darkgrey;
+  width: 400px;
+}
+
+.social-container {
+  width: 60px;
+  height: 32px;
+}
+
 @media (max-width: 660px) {
   .main-header {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .main-nav ul {
     display: flex;
@@ -164,9 +231,9 @@ body {
     padding-bottom: 4px;
   }
   .intro-container {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .page2-container {
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
