@@ -222,11 +222,13 @@ body {
 }
 
 .social-container {
+  display: flex;
   width: 60px;
   height: 32px;
 }
 
 .social-container img {
+  flex: 1;
   max-height: 100%;
 }
 

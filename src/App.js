@@ -115,6 +115,14 @@ export default function App() {
                 alt="linkedin logo"
               />{" "}
             </a>
+
+            <a href="https://github.com/cph-kiwi" target="_blank">
+              {" "}
+              <img
+                src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/GitHub-Mark-32px.png"
+                alt="GitHub logo"
+              />{" "}
+            </a>
           </div>
           <div className="footer">
             <p className="footer-p">
