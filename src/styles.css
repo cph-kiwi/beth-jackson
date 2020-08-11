@@ -129,19 +129,25 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: stretch;
 	height: 308px;
 }
 
 .page2-text-column {
+	display: flex;
+	flex-direction: column;
 	flex: 1;
 	height: 304px;
 	width: 410px;
+	justify-content: flex-start;
+	align-content: space-between;
 }
 
 .page2-h3 {
 	font-family: 'Lato', sans-serif;
 	font-size: 28px;
 	font-weight: 900;
+	width: 400px;
 }
 
 .page2-p {
@@ -149,6 +155,10 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	color: var(--darkgrey);
+	width: 400px;
+}
+
+.page2-link-to-more {
 	width: 400px;
 }
 
@@ -165,7 +175,8 @@ body {
 
 .page2-image-column {
 	flex: 1;
-	display: inline-block;
+	display: flex;
+	justify-content: flex-end;
 	width: 400px;
 }
 
