@@ -11,7 +11,7 @@
 
 /*
 * {
-  border: 1px solid red !important;
+	border: 1px solid red !important;
 }
 */
 
@@ -109,6 +109,7 @@ body {
 
 .page2-container {
 	padding-left: 64px;
+	padding-right: 64px;
 	padding-top: 76px;
 	background-size: cover;
 	display: block;
@@ -122,6 +123,19 @@ body {
 	text-transform: uppercase;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.page2-columns-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 308px;
+}
+
+.page2-text-column {
+	flex: 1;
+	height: 304px;
+	width: 410px;
 }
 
 .page2-h3 {
@@ -149,9 +163,20 @@ body {
 	color: var(--accent-red);
 }
 
+.page2-image-column {
+	flex: 1;
+	display: inline-block;
+	width: 400px;
+}
+
+.page2-image-column img {
+	max-height: 100%;
+}
+
 .about-container {
 	background: var(--lightgrey-background);
 	padding-left: 64px;
+	padding-right: 64px;
 	padding-top: 76px;
 	background-size: cover;
 	display: block;
@@ -183,6 +208,7 @@ body {
 
 .contact-container {
 	padding-left: 64px;
+	padding-right: 64px;
 	padding-top: 76px;
 	background-size: cover;
 	display: block;
@@ -199,8 +225,8 @@ body {
 }
 
 .contact-h3 {
-	font-family: 'Lato', sans-serif;
-	font-size: 28px;
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 44px;
 	font-weight: 900;
 }
 
@@ -241,8 +267,8 @@ body {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.hide-element {
-		display: none;
+	.hide {
+		display: none !important;
 	}
 	.main-nav ul {
 		display: flex;
@@ -256,9 +282,24 @@ body {
 		padding-bottom: 4px;
 	}
 	.intro-container {
-		padding-left: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 	.page2-container {
-		padding-left: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.page2-columns-container {
+		flex-direction: column;
+	}
+
+	.about-container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.contact-container {
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
