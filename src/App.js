@@ -127,41 +127,45 @@ export default function App() {
 			<div className="contact" id="contact">
 				<div className="contact-container">
 					<h5 className="contact-h5">Contact me</h5>
-					<h3 className="contact-h3">
-						<a
-							href="mailto:beth.jack@gmail.com"
-							target="_blank"
-						>
-							beth.jack@gmail.com
-						</a>
-					</h3>
-					<p className="contact-p">
-						I am always keen to collaborate. I'm hoping to
-						find a permanent position in the tech sector.
-						Let's get in touch.
-					</p>
-					<div className="social-container">
-						<a
-							href="https://www.linkedin.com/in/beth-jackson-4a29ab193/"
-							target="_blank"
-						>
-							{' '}
-							<img
-								src="https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no/photo.jpg"
-								alt="linkedin logo"
-							/>{' '}
-						</a>
+					<div className="contact-columns-container">
+						<div className="contact-text-column">
+							<h3 className="contact-h3">
+								<a
+									href="mailto:beth.jack@gmail.com"
+									target="_blank"
+								>
+									beth.jack@gmail.com
+								</a>
+							</h3>
+							<p className="contact-p">
+								I am always keen to collaborate. I'm hoping
+								to find a permanent position in the tech
+								sector. Let's get in touch.
+							</p>
+							<div className="social-container">
+								<a
+									href="https://www.linkedin.com/in/beth-jackson-4a29ab193/"
+									target="_blank"
+								>
+									{' '}
+									<img
+										src="https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no/photo.jpg"
+										alt="linkedin logo"
+									/>{' '}
+								</a>
 
-						<a
-							href="https://github.com/cph-kiwi"
-							target="_blank"
-						>
-							{' '}
-							<img
-								src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/GitHub-Mark-32px.png"
-								alt="GitHub logo"
-							/>{' '}
-						</a>
+								<a
+									href="https://github.com/cph-kiwi"
+									target="_blank"
+								>
+									{' '}
+									<img
+										src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/GitHub-Mark-32px.png"
+										alt="GitHub logo"
+									/>{' '}
+								</a>
+							</div>
+						</div>
 					</div>
 					<div className="footer">
 						<p className="footer-p">

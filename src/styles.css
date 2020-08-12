@@ -75,7 +75,7 @@ body {
 .intro-container {
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 76px; /* 8vh */
+	padding-top: 76px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -118,7 +118,7 @@ body {
 .page2-container {
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 76px; /* 8vh */
+	padding-top: 76px;
 	background-size: cover;
 	display: block;
 	min-height: 100vh;
@@ -187,7 +187,7 @@ body {
 	background: var(--lightgrey-background);
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 76px; /* 8vh */
+	padding-top: 76px;
 	background-size: cover;
 	display: block;
 	min-height: 100vh;
@@ -240,7 +240,7 @@ body {
 .contact-container {
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 76px; /* 8vh */
+	padding-top: 76px;
 	background-size: cover;
 	display: flex;
 	min-height: 100vh;
@@ -257,6 +257,23 @@ body {
 	text-transform: uppercase;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.contact-columns-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.contact-text-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 300px;
+	width: 35%;
+	justify-content: flex-start;
+	align-content: space-between;
 }
 
 .contact-h3 {
@@ -368,5 +385,18 @@ body {
 		padding-left: 50px;
 		padding-right: 50px;
 		width: 100%;
+	}
+
+	.contact-columns-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.contact-text-column {
+		padding-bottom: 50px;
+		width: 100%;
+	}
+	.contact-h3 {
+		font-size: 32px;
 	}
 }
