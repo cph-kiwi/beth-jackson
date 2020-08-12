@@ -97,22 +97,31 @@ export default function App() {
 			<div className="about" id="about">
 				<div className="about-container">
 					<h5 className="about-h5">About me</h5>
-					<h3 className="about-h3">Beth Jackson</h3>
-					<p className="about-p">
-						I grew up in rural New Zealand, on a farm in
-						Taranaki. I attended the University of Otago,
-						where I studied psychology, philosophy, and
-						human resources management. After completing my
-						studies, I worked at the University of Otago as
-						a librarian, and then as an administrative
-						assistant. I worked in many different roles
-						within university administration, at both the
-						University of Otago in Dunedin and UCL in
-						London. I lived in London for 7 years, and then
-						moved to Copenhagen. Currently I am studying web
-						development and Danish, and looking for work in
-						the tech sector.
-					</p>
+					<div className="about-columns-container">
+						<div className="about-text-column">
+							<h3 className="about-h3">Beth Jackson</h3>
+							<p className="about-p">
+								I grew up in rural New Zealand, on a farm in
+								Taranaki. I attended the University of
+								Otago, where I studied psychology,
+								philosophy, and human resources management.
+								After completing my studies, I worked at the
+								University of Otago as a librarian, and then
+								as an administrative assistant. I worked in
+								many different roles within university
+								administration, at both the University of
+								Otago in Dunedin and UCL in London. I lived
+								in London for 7 years, and then moved to
+								Copenhagen. Currently I am studying web
+								development and Danish, and looking for work
+								in the tech sector.
+							</p>
+						</div>
+						<img
+							src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Profile%20picture.jpg"
+							alt="Portrait of Beth Jackson"
+						/>{' '}
+					</div>
 				</div>
 			</div>
 			<div className="contact" id="contact">
