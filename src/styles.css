@@ -75,7 +75,7 @@ body {
 .intro-container {
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 8vh;
+	padding-top: 76px; /* 8vh */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -100,7 +100,9 @@ body {
 }
 
 .intro-p {
-	width: 400px;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
 	color: white;
 }
 
@@ -116,7 +118,7 @@ body {
 .page2-container {
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 76px;
+	padding-top: 76px; /* 8vh */
 	background-size: cover;
 	display: block;
 	min-height: 100vh;
@@ -185,7 +187,7 @@ body {
 	background: var(--lightgrey-background);
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 76px;
+	padding-top: 76px; /* 8vh */
 	background-size: cover;
 	display: block;
 	min-height: 100vh;
@@ -238,10 +240,14 @@ body {
 .contact-container {
 	padding-left: 64px;
 	padding-right: 64px;
-	padding-top: 76px;
+	padding-top: 76px; /* 8vh */
 	background-size: cover;
-	display: block;
+	display: flex;
 	min-height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 35%;
 }
 
 .contact-h5 {
@@ -273,7 +279,6 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	color: var(--darkgrey);
-	width: 400px;
 }
 
 .social-container {
@@ -362,5 +367,6 @@ body {
 	.contact-container {
 		padding-left: 50px;
 		padding-right: 50px;
+		width: 100%;
 	}
 }
