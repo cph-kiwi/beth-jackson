@@ -87,13 +87,10 @@ export default function App() {
 								</a>
 							</div>
 						</div>
-
-						<div className="page2-image-column">
-							<img
-								src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Screenshot%202020-08-06%20at%2021.53.10.png"
-								alt="screenshot of pig latin translator app"
-							/>{' '}
-						</div>
+						<img
+							src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Screenshot%202020-08-06%20at%2021.53.10.png"
+							alt="screenshot of pig latin translator app"
+						/>{' '}
 					</div>
 				</div>
 			</div>
