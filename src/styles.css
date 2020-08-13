@@ -335,6 +335,10 @@ body {
 		width: 100%;
 	}
 
+	.intro-p {
+		text-align: justify;
+	}
+
 	.page2-container {
 		padding-left: 50px;
 		padding-right: 50px;
@@ -349,6 +353,10 @@ body {
 	.page2-text-column {
 		padding-bottom: 50px;
 		width: 100%;
+	}
+
+	.page2-p {
+		text-align: justify;
 	}
 
 	.page2-columns-container img {
@@ -375,6 +383,7 @@ body {
 
 	.about-p {
 		padding-bottom: 50px;
+		text-align: justify;
 	}
 
 	.about-columns-container img {
@@ -401,8 +410,13 @@ body {
 		width: 100%;
 	}
 	.contact-h3 {
-		font-size: 28px;
+		font-size: 20px;
 	}
+
+	.contact-p {
+		text-align: justify;
+	}
+
 	.footer {
 		padding-top: 50px;
 	}
