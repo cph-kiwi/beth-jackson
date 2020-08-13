@@ -80,7 +80,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
-	width: 40%;
+	width: 50%;
 }
 
 .intro-h1 {
@@ -121,7 +121,7 @@ body {
 	padding-top: 76px;
 	background-size: cover;
 	display: block;
-	min-height: 100vh;
+	padding-bottom: 64px;
 }
 
 .page2-h5 {
@@ -189,7 +189,7 @@ body {
 	padding-top: 76px;
 	background-size: cover;
 	display: block;
-	min-height: 100vh;
+	padding-bottom: 64px;
 }
 
 .about-h5 {
@@ -211,7 +211,6 @@ body {
 .about-text-column {
 	display: flex;
 	flex-direction: column;
-	height: 300px;
 	width: 40%;
 	justify-content: flex-start;
 	align-content: space-between;
@@ -241,7 +240,6 @@ body {
 	padding-top: 76px;
 	background-size: cover;
 	display: flex;
-	min-height: 100vh;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -328,6 +326,7 @@ body {
 	.main-nav a {
 		padding-top: 4px;
 		padding-bottom: 4px;
+		color: white;
 	}
 
 	.intro-container {
@@ -342,7 +341,9 @@ body {
 	}
 
 	.page2-columns-container {
+		display: flex;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	.page2-text-column {
@@ -361,7 +362,10 @@ body {
 	}
 
 	.about-columns-container {
+		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.about-text-column {
@@ -386,8 +390,10 @@ body {
 	}
 
 	.contact-columns-container {
+		display: flex;
 		flex-direction: column;
-		width: 100%;
+		justify-content: center;
+		width: 50%;
 	}
 
 	.contact-text-column {
