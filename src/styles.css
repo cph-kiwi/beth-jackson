@@ -231,7 +231,8 @@ body {
 }
 
 .about-columns-container img {
-	width: 40%;
+	padding-right: 100px;
+	width: 30%;
 }
 
 .contact-container {
@@ -373,6 +374,7 @@ body {
 	}
 
 	.about-columns-container img {
+		padding-right: 0px;
 		padding-bottom: 50px;
 		width: 50%;
 	}
