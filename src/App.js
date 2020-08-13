@@ -40,7 +40,9 @@ export default function App() {
 							<a href="#about">About</a>
 						</li>
 						<li>
-							<a href="#">Resume</a>
+							<a href="/Beth Jackson Moller CV and cover letter 15-01-2020.pdf">
+								Resume
+							</a>
 						</li>
 						<li className="hide">
 							<a href="#">Blog</a>
@@ -167,14 +169,14 @@ export default function App() {
 							</div>
 						</div>
 					</div>
-					<div className="footer">
-						<p className="footer-p">
-							This site is hand-crafted, with care.
-							<br />
-							Copyright © Beth Jackson.
-						</p>
-					</div>
 				</div>
+			</div>
+			<div className="footer">
+				<p className="footer-p">
+					This site is hand-crafted, with care.
+					<br />
+					Copyright © Beth Jackson.
+				</p>
 			</div>
 		</div>
 	);

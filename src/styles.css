@@ -205,7 +205,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .about-text-column {
@@ -230,8 +230,8 @@ body {
 }
 
 .about-columns-container img {
-	padding-right: 100px;
-	width: 30%;
+	max-width: 400px;
+	width: 40%;
 }
 
 .contact-container {
@@ -307,6 +307,17 @@ body {
 	flex: 1;
 	max-height: 100%;
 	padding-right: 20px;
+}
+
+.footer {
+	padding-left: 64px;
+	padding-right: 64px;
+	padding-top: 76px;
+	background-size: cover;
+	flex-direction: column;
+	width: 100%;
+	background: var(--lightgrey-background);
+	display: flex;
 }
 
 @media (max-width: 800px) {
@@ -415,9 +426,5 @@ body {
 
 	.contact-p {
 		text-align: justify;
-	}
-
-	.footer {
-		padding-top: 50px;
 	}
 }
