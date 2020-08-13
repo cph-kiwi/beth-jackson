@@ -380,7 +380,7 @@ body {
 	.about-columns-container img {
 		padding-right: 0px;
 		padding-bottom: 50px;
-		width: 50%;
+		width: 60%;
 	}
 
 	.contact-container {
@@ -393,7 +393,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 50%;
+		align-items: center;
 	}
 
 	.contact-text-column {
@@ -401,6 +401,9 @@ body {
 		width: 100%;
 	}
 	.contact-h3 {
-		font-size: 32px;
+		font-size: 28px;
+	}
+	.footer {
+		padding-top: 50px;
 	}
 }
