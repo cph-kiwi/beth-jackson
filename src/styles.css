@@ -84,7 +84,6 @@ body {
 }
 
 .intro-h1 {
-	width: 400px;
 	font-family: 'Playfair Display', sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -93,7 +92,6 @@ body {
 }
 
 .intro-h2 {
-	width: 400px;
 	font-style: normal;
 	font-weight: normal;
 	color: white;
