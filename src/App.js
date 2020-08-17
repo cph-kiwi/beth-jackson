@@ -34,7 +34,7 @@ export default function App() {
 						}}
 					>
 						<li className="hide">
-							<a href="#page2">Portfolio</a>
+							<a href="#pig-latin">Portfolio</a>
 						</li>
 						<li className="hide">
 							<a href="#about">About</a>
@@ -65,25 +65,27 @@ export default function App() {
 						projects.
 					</p>
 					<div className="intro-link-to-more">
-						<a href="#page2">Check out my work</a>
+						<a href="#pig-latin">Check out my work</a>
 					</div>
 				</div>
 			</div>
-			<div className="page2" id="page2">
-				<div className="page2-container">
-					<h5 className="page2-h5">Featured projects</h5>
-					<div className="page2-columns-container">
-						<div className="page2-text-column">
-							<h3 className="page2-h3">
+			<div className="pig-latin" id="pig-latin">
+				<div className="pig-latin-container">
+					<h5 className="pig-latin-h5">
+						Featured projects
+					</h5>
+					<div className="pig-latin-columns-container">
+						<div className="pig-latin-text-column">
+							<h3 className="pig-latin-h3">
 								Pig Latin Translator
 							</h3>
-							<p className="page2-p">
+							<p className="pig-latin-p">
 								My first personal project. An app that
 								translates from English into Pig Latin (a
 								fun, pseudo-language, mostly used by
 								children in play).
 							</p>
-							<div className="page2-link-to-more">
+							<div className="pig-latin-link-to-more">
 								<a href="https://pig-latin.cph.kiwi/">
 									Visit Pig Latin Translator
 								</a>

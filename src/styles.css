@@ -115,7 +115,7 @@ body {
 	color: var(--accent-red);
 }
 
-.page2-container {
+.pig-latin-container {
 	padding-left: 64px;
 	padding-right: 64px;
 	padding-top: 76px;
@@ -124,7 +124,7 @@ body {
 	padding-bottom: 64px;
 }
 
-.page2-h5 {
+.pig-latin-h5 {
 	font-size: 14px;
 	font-weight: 400;
 	font-family: 'Lato', sans-serif;
@@ -133,14 +133,14 @@ body {
 	vertical-align: top;
 }
 
-.page2-columns-container {
+.pig-latin-columns-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
 }
 
-.page2-text-column {
+.pig-latin-text-column {
 	display: flex;
 	flex-direction: column;
 
@@ -150,35 +150,31 @@ body {
 	align-content: space-between;
 }
 
-.page2-h3 {
+.pig-latin-h3 {
 	font-family: 'Lato', sans-serif;
 	font-size: 28px;
 	font-weight: 900;
 }
 
-.page2-p {
+.pig-latin-p {
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
 	color: var(--darkgrey);
 }
 
-.page2-link-to-more {
-	width: 400px;
-}
-
-.page2-link-to-more a {
+.pig-latin-link-to-more a {
 	font-size: 14px;
 	font-weight: 700;
 	color: black;
 	text-decoration: none;
 }
 
-.page2-link-to-more a:hover {
+.pig-latin-link-to-more a:hover {
 	color: var(--accent-red);
 }
 
-.page2-columns-container img {
+.pig-latin-columns-container img {
 	width: 40%;
 }
 
@@ -346,31 +342,46 @@ body {
 		width: 100%;
 	}
 
+	.intro-columns-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.intro-text-column {
+		padding-bottom: 50px;
+		width: 100%;
+	}
+	.intro-h3 {
+		font-size: 20px;
+	}
+
 	.intro-p {
 		text-align: justify;
 	}
 
-	.page2-container {
+	.pig-latin-container {
 		padding-left: 50px;
 		padding-right: 50px;
 	}
 
-	.page2-columns-container {
+	.pig-latin-columns-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	.page2-text-column {
+	.pig-latin-text-column {
 		padding-bottom: 50px;
 		width: 100%;
 	}
 
-	.page2-p {
+	.pig-latin-p {
 		text-align: justify;
 	}
 
-	.page2-columns-container img {
+	.pig-latin-columns-container img {
 		padding-bottom: 50px;
 		width: 100%;
 	}
