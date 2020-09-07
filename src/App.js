@@ -68,9 +68,34 @@ export default function App() {
         </div>
       </div>
 
+      <div className="drum-kit" id="featured-projects">
+        <div className="drum-kit-container">
+          <h5 className="drum-kit-h5">Featured projects</h5>
+          <div className="drum-kit-columns-container">
+            <div className="drum-kit-text-column">
+              <h3 className="drum-kit-h3">Drum Kit</h3>
+              <p className="drum-kit-p">
+                This project idea was undertaken as part of the{" "}
+                <a href="https://javascript30.com/">javascript30</a> course by{" "}
+                <a href="https://wesbos.com/">Wes Bos</a>. I personalised it by
+                adding a metronome.
+              </p>
+              <div className="drum-kit-link-to-more">
+                <a href="https://drum-kit.cph.kiwi/">
+                  Visit the drum kit with metronome
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Screenshot%202020-09-07%20at%2013.52.53.png"
+              alt="screenshot of the drum kit with metronome"
+            />{" "}
+          </div>
+        </div>
+      </div>
+
       <div className="karen" id="featured-projects">
         <div className="karen-container">
-          <h5 className="karen-h5">Featured projects</h5>
           <div className="karen-columns-container">
             <div className="karen-text-column">
               <h3 className="karen-h3">Karen Meier Rasmussen</h3>
