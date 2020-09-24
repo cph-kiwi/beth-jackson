@@ -1,21 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { GithubIcon, TwitterIcon, LinkedInIcon } from "../src/Icons";
 import Head from "next/head";
+import { Navigation } from "../src/Navigation";
 
 export default function App() {
-  const [scrollOffSet, setScrollOffSet] = useState(0);
-
-  useEffect(() => {
-    let handler = (e) => setScrollOffSet(window.scrollY);
-    window.addEventListener("scroll", handler, {
-      passive: true,
-    });
-    return () => window.removeEventListener("scroll", handler);
-  }, []);
-
-  let headerAlpha = Math.min(0.5, scrollOffSet / 300);
-  let menuBrightness = Math.min(255, scrollOffSet);
-
   return (
     <div className="App">
       <Head>
@@ -34,40 +22,7 @@ export default function App() {
         />
       </Head>
       <a id="top" />
-      <header
-        className="main-header"
-        style={{ background: `rgba(0,0,0,${headerAlpha})` }}
-      >
-        <div className="main-header-logo">
-          <a href="#top">B.</a>
-        </div>
-        <nav className="main-nav">
-          <ul
-            className="main-nav-list"
-            style={{
-              color: `rgb(${menuBrightness}, ${menuBrightness}, ${menuBrightness})`,
-            }}
-          >
-            <li className="hide">
-              <a href="#featured-projects">Portfolio</a>
-            </li>
-            <li className="hide">
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="/Beth Jackson Moller CV and cover letter 15-01-2020.pdf">
-                Resume
-              </a>
-            </li>
-            <li className="hide">
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Navigation />
       <div className="intro">
         <div className="intro-container">
           <h1 className="intro-h1">Hi, I'm Beth.</h1>
