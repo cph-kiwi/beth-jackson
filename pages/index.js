@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./styles.css";
-import { GithubIcon, TwitterIcon, LinkedInIcon } from "./Icons";
+import { GithubIcon, TwitterIcon, LinkedInIcon } from "../src/Icons";
+import Head from "next/head";
 
 export default function App() {
   const [scrollOffSet, setScrollOffSet] = useState(0);
@@ -8,7 +8,7 @@ export default function App() {
   useEffect(() => {
     let handler = (e) => setScrollOffSet(window.scrollY);
     window.addEventListener("scroll", handler, {
-      passive: true
+      passive: true,
     });
     return () => window.removeEventListener("scroll", handler);
   }, []);
@@ -18,6 +18,21 @@ export default function App() {
 
   return (
     <div className="App">
+      <Head>
+        <title>Beth Jackson - Developer</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:wght@800&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <a id="top" />
       <header
         className="main-header"
@@ -30,7 +45,7 @@ export default function App() {
           <ul
             className="main-nav-list"
             style={{
-              color: `rgb(${menuBrightness}, ${menuBrightness}, ${menuBrightness})`
+              color: `rgb(${menuBrightness}, ${menuBrightness}, ${menuBrightness})`,
             }}
           >
             <li className="hide">
