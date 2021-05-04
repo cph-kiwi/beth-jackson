@@ -48,3 +48,8 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+// export default function BlogPost(props) {
+//   console.log(props);
+//   return <div>Hello Beth</div>;
+// }
