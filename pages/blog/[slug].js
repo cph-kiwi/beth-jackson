@@ -2,7 +2,6 @@ import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 import { getAllPosts, getBlogBySlug } from "../../src/blog-support-helpers";
 import { Timer } from "../../src/components/Timer";
-import "./slug.styles.css";
 
 const components = { Timer };
 
@@ -33,9 +32,9 @@ export default function BlogPost({ source, meta }) {
   console.log(source, meta);
   const content = hydrate(source, { components });
   return (
-    <div className="main">
-      <h1 className="main-heading">CPH-Kiwi's recipes</h1>
-      <div className="blog-post">{content}</div>
+    <div className="blog-post-outer">
+      <h1 className="blog-post-outer-heading">CPH-Kiwi's recipes</h1>
+      <div className="blog-post-mdx">{content}</div>
     </div>
   );
 }
