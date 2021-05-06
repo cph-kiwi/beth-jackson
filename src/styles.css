@@ -557,6 +557,7 @@ body {
 }
 
 .blog-post-outer {
+  min-height: 100vh;
   --white: #fbfffe;
   --pink: #fcd1d1;
   --darkest-blue: #142850;
