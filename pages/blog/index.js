@@ -2,7 +2,29 @@ import React from "react";
 import Head from "next/head";
 import { Navigation } from "../../src/Navigation";
 
-export default function Blog() {
+export async function getStaticProps({ params }) {
+  const { data, content } = getBlogBySlug(params.slug);
+
+  const mdxSource = await renderToString(content, {
+    components,
+    // Optionally pass remark/rehype plugins
+    mdxOptions: {
+      remarkPlugins: [],
+      rehypePlugins: [],
+    },
+
+    scope: { ...data, published: data.published.toJSON() },
+  });
+
+  return {
+    props: {
+      source: mdxSource,
+      meta: { ...data, published: data.published.toJSON() },
+    },
+  };
+}
+
+export default function Blog(props) {
   return (
     <div className="Blog">
       <Head>
