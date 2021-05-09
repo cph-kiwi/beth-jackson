@@ -1,25 +1,24 @@
 import React from "react";
 import Head from "next/head";
 import { Navigation } from "../../src/Navigation";
+import { getBlogBySlug, getAllPosts } from "../../src/blog-support-helpers";
 
-export async function getStaticProps({ params }) {
-  const { data, content } = getBlogBySlug(params.slug);
-
-  const mdxSource = await renderToString(content, {
-    components,
-    // Optionally pass remark/rehype plugins
-    mdxOptions: {
-      remarkPlugins: [],
-      rehypePlugins: [],
-    },
-
-    scope: { ...data, published: data.published.toJSON() },
-  });
-
+export async function getStaticProps() {
+  const posts = getAllPosts();
   return {
     props: {
-      source: mdxSource,
-      meta: { ...data, published: data.published.toJSON() },
+      posts: posts
+        .map((slug) => {
+          const { data } = getBlogBySlug(slug);
+          return data;
+        })
+        .sort((a, b) => {
+          if (a.published > b.published) {
+            return -1;
+          } else {
+            return 1;
+          }
+        }),
     },
   };
 }
@@ -59,6 +58,7 @@ export default function Blog(props) {
           </h2>
           <h3 className="blog-h3">Blog entry title</h3>
           <p className="blog-p">Blog text</p>
+          {console.log(props)}
         </div>
       </div>
     </div>
