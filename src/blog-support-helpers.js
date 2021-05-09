@@ -7,8 +7,8 @@ const blogDirectory = join(process.cwd(), "blog-posts");
 export function getBlogBySlug(slug) {
   const fullPath = join(blogDirectory, `${slug}.mdx`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
-
-  return matter(fileContents);
+  const { data, content } = matter(fileContents);
+  return { data: { ...data, published: data.published.toJSON() }, content };
 }
 
 export function getAllPosts() {

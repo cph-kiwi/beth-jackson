@@ -17,13 +17,13 @@ export async function getStaticProps({ params }) {
       rehypePlugins: [],
     },
 
-    scope: { ...data, published: data.published.toJSON() },
+    scope: data,
   });
 
   return {
     props: {
       source: mdxSource,
-      meta: { ...data, published: data.published.toJSON() },
+      meta: data,
     },
   };
 }
