@@ -496,7 +496,12 @@ body {
 
 .blog-main {
   min-height: 100vh;
-  background: var(--lightgrey-background);
+  --white: #fbfffe;
+  --pink: #fcd1d1;
+  --darkest-blue: #142850;
+  --blue: #27496d;
+  --forest-green: #0c7b93;
+  background: var(--pink);
   background-size: cover;
 
   padding-left: 64px;
@@ -510,13 +515,35 @@ body {
 }
 
 .blog-container {
-  /* background: var(--lightgrey-background); */
   padding-left: 64px;
   padding-right: 64px;
   padding-top: 76px;
   background-size: cover;
   display: block;
   padding-bottom: 64px;
+}
+
+.blog-container ul {
+  list-style-type: none;
+}
+
+.blog-container a:link {
+  color: var(--darkest-blue);
+  text-decoration: none;
+}
+
+.blog-container a:visited {
+  color: var(--darkest-blue);
+  text-decoration: underline;
+}
+
+.blog-container a:hover {
+  color: var(--forest-green);
+  text-decoration: underline;
+}
+
+.blog-h1 {
+  color: var(--forest-green);
 }
 
 .blog-h2 {
@@ -553,7 +580,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: var(--darkgrey);
+  color: var(--darkest-blue);
 }
 
 .blog-post-outer {
