@@ -24,8 +24,9 @@ export async function getStaticProps() {
   };
 }
 
+
 export default function Blog({ posts }) {
-  console.log(posts);
+
   return (
     <div className="Blog">
       <Head>
@@ -47,7 +48,9 @@ export default function Blog({ posts }) {
       <Navigation />
       <div className="blog-main">
         <div className="blog-container">
+
           <h1 className="blog-h1">CPH-Kiwi's recipes</h1>
+
           <h2 className="blog-p">
             I have a terrible memory. I make pancakes every weekend, and I still
             have to look up the recipe. After reading a whole bunch of
