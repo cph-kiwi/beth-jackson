@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import { Navigation } from "../../src/Navigation";
 import { getBlogBySlug, getAllPosts } from "../../src/blog-support-helpers";
 
@@ -23,7 +24,9 @@ export async function getStaticProps() {
   };
 }
 
-export default function Blog(props) {
+
+export default function Blog({ posts }) {
+
   return (
     <div className="Blog">
       <Head>
@@ -45,20 +48,30 @@ export default function Blog(props) {
       <Navigation />
       <div className="blog-main">
         <div className="blog-container">
-          <h1 className="blog-h1">Beth's blog.</h1>
+
+          <h1 className="blog-h1">CPH-Kiwi's recipes</h1>
+
           <h2 className="blog-p">
             I have a terrible memory. I make pancakes every weekend, and I still
             have to look up the recipe. After reading a whole bunch of
             organisational books, I have discovered that this isn't a bad thing.
             By writing everything down and not trying to memorise everything, I
-            am reducing cognitive load. In any case, I can't remember how to
-            make porridge from one winter to the next, so I'm writing all my
-            recipes here. This is more for me than anyone else, but happy
-            browsing.
+            am reducing cognitive load. This is what I tell myself to feel
+            better, anyway. In any case, I can't remember how to make porridge
+            from one winter to the next, so I'm writing all my recipes here.
+            This is more for me than anyone else, but I wish you happy browsing.
           </h2>
-          <h3 className="blog-h3">Blog entry title</h3>
-          <p className="blog-p">Blog text</p>
-          {console.log(props)}
+          <ul>
+            {posts.map((post) => {
+              return (
+                <li key={post.id}>
+                  <Link href={`/blog/${post.slug}`}>
+                    <a>{post.title}</a>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </div>
