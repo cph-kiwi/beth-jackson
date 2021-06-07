@@ -1,33 +1,38 @@
-import { useState, useEffect } from "react";
+import { useTimer } from "react-timer-hook";
 
-export const Timer = ({ time }) => {
-  const [startTime, setStartTime] = useState();
-  const [timeElapsed, setTimeElapsed] = useState(0);
+export const Timer = ({ expiryTimestamp }) => {
+  const {
+    seconds,
+    minutes,
+    hours,
 
-  const timeRemaining = Math.round(time - timeElapsed / 1000);
-
-  useEffect(() => {
-    if (startTime) {
-      const timerId = setInterval(() => {
-        setTimeElapsed(Date.now() - startTime);
-      }, 1000);
-      return () => clearInterval(timerId);
-    }
-  }, [startTime]);
-
-  useEffect(() => {
-    // when timeRemaining === 0 setSTartTime to undefined
-    if (timeRemaining <= 0) {
-      setStartTime(undefined);
-    }
-  }, [timeRemaining]);
+    isRunning,
+    start,
+    pause,
+    resume,
+    restart,
+  } = useTimer({
+    expiryTimestamp,
+    onExpire: () => console.warn("onExpire called"),
+  });
 
   return (
-    <div>
-      <span>{timeRemaining}</span>
-      <button onClick={() => setStartTime(Date.now())}>Start</button>
+    <div className="timer">
+      <h4>Timer</h4>
+      <div>
+        <span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
+      </div>
+      <p>{isRunning ? "Running" : "Not running"}</p>
+      <button onClick={start}>Start</button>
+      <button onClick={pause}>Pause</button>
+      <button onClick={resume}>Resume</button>
+      <button
+        onClick={() => {
+          restart(expiryTimestamp);
+        }}
+      >
+        Restart
+      </button>
     </div>
   );
 };
-
-// if there is a startTime - clear before setStartTime

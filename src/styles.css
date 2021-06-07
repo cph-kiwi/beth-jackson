@@ -629,6 +629,10 @@ body {
   list-style-type: none;
 }
 
+.timer {
+  border: solid #142850;
+}
+
 @media (max-width: 800px) {
   .main-header {
     padding-left: 20px;
