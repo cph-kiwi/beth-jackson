@@ -13,6 +13,7 @@
     "next-mdx-remote": "^2.1.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-timer-hook": "^3.0.3"
+    "react-timer-hook": "^3.0.3",
+    "use-sound": "^4.0.0"
   }
 }

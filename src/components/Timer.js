@@ -1,5 +1,6 @@
 import { useTimer } from "react-timer-hook";
 import { useState } from "react";
+import useSound from "use-sound";
 
 export const Timer = ({
   inputHours = 0,
@@ -8,6 +9,7 @@ export const Timer = ({
 }) => {
   const [show, setShow] = useState(false);
   const [expired, setExpired] = useState(false);
+  const [play] = useSound("/371292__iamgiorgio__b1-alarm.mp3");
 
   const expiryTimestamp = () => {
     const runTime =
@@ -21,8 +23,8 @@ export const Timer = ({
     useTimer({
       expiryTimestamp: expiryTimestamp(),
       onExpire: () => {
-        console.warn("onExpire called");
-        // play tune
+        // console.warn("onExpire called");
+        play();
         setShow(false);
         setExpired(true);
       },
@@ -39,7 +41,13 @@ export const Timer = ({
       >
         ⏲
       </button>
-      {expired ? <span>Finished!</span> : <></>}
+      {expired ? (
+        <span>
+          <strong>Finished!</strong>
+        </span>
+      ) : (
+        <></>
+      )}
       {show ? (
         <div className="timer">
           <div>
