@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ source, meta }) {
-  console.log(source, meta);
+  // console.log(source, meta);
   const content = hydrate(source, { components });
   return (
     <div className="blog-post-outer">
@@ -64,7 +64,7 @@ export default function BlogPost({ source, meta }) {
 
 export async function getStaticPaths() {
   const posts = getAllPosts();
-  console.log(posts);
+  // console.log(posts);
   return {
     paths: posts.map((slug) => {
       return {

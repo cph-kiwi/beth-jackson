@@ -629,6 +629,23 @@ body {
   list-style-type: none;
 }
 
+.timer {
+  border: 1px solid #142850;
+  width: 85%;
+}
+
+.timer-start {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+}
+
 @media (max-width: 800px) {
   .main-header {
     padding-left: 20px;
