@@ -36,7 +36,7 @@ export default function BlogPost({ source, meta }) {
   // console.log(source, meta);
   const content = hydrate(source, { components });
   return (
-    <div className="blog-post-outer">
+    <div>
       <Head>
         <title>Beth Jackson - Blog post</title>
         <link
@@ -54,10 +54,8 @@ export default function BlogPost({ source, meta }) {
       </Head>
       <a id="top" />
       <Navigation />
-      <div className="blog-post-body">
-        <h1 className="blog-post-outer-heading">CPH-Kiwi's recipes</h1>
-        <div className="blog-post-mdx">{content}</div>
-      </div>
+      <h1>CPH-Kiwi's recipes</h1>
+      <div>{content}</div>
     </div>
   );
 }
