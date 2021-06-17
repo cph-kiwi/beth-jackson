@@ -41,9 +41,7 @@ export function Navigation() {
             </Link>
           </li>
           <li>
-            <a href="/Beth Jackson Moller CV and cover letter 15-01-2020.pdf">
-              Resume
-            </a>
+            <a href="/beth.pdf">Resume</a>
           </li>
           <li className="hide">
             <Link href="/blog">
