@@ -54,8 +54,9 @@ export default function BlogPost({ source, meta }) {
       </Head>
       <a id="top" />
       <Navigation />
-      <h1>CPH-Kiwi's recipes</h1>
-      <div>{content}</div>
+      <div className="blog-post-wrapper">
+        <div className="blog-post-contents">{content}</div>
+      </div>
     </div>
   );
 }

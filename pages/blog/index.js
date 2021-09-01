@@ -44,9 +44,9 @@ export default function Blog({ posts }) {
       </Head>
       <a id="top" />
       <Navigation />
-      <div>
-        <h1>CPH-Kiwi's recipes</h1>
-        <p>
+      <div className="blog-contents-page">
+        <h1 className="blog-main-heading">CPH-Kiwi's recipes</h1>
+        <p className="blog-text-wrapper">
           I have a terrible memory. I make pancakes every weekend, and I still
           have to look up the recipe. After reading a whole bunch of
           organisational books, I have discovered that this isn't a bad thing.
@@ -56,10 +56,10 @@ export default function Blog({ posts }) {
           winter to the next, so I'm writing all my recipes here. This is more
           for me than anyone else, but I wish you happy browsing.
         </p>
-        <ul>
+        <ul className="blog-ul-wrapper">
           {posts.map((post) => {
             return (
-              <li key={post.id}>
+              <li key={post.id} className="blog-li">
                 <Link href={`/blog/${post.slug}`}>
                   <a>{post.title}</a>
                 </Link>
