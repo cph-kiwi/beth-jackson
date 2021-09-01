@@ -6,8 +6,9 @@ import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 import { getAllPosts, getBlogBySlug } from "../../src/blog-support-helpers";
 import { Timer } from "../../src/components/Timer";
+import { BlogTextWrapper } from "../../src/components/BlogTextWrapper";
 
-const components = { Timer };
+const components = { Timer, BlogTextWrapper };
 
 export async function getStaticProps({ params }) {
   const { data, content } = getBlogBySlug(params.slug);

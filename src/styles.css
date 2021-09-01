@@ -517,6 +517,20 @@ body {
   border-radius: 8px;
 }
 
+.blog-text-wrapper p > a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-text-wrapper p > a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-text-wrapper p > a:hover {
+  text-decoration: underline;
+}
+
 .blog-ul-wrapper {
   background-color: white;
   padding: 36px;
