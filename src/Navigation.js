@@ -30,7 +30,7 @@ export function Navigation() {
             color: `rgb(${menuBrightness}, ${menuBrightness}, ${menuBrightness})`,
           }}
         >
-          <li className="hide">
+          <li>
             <Link href="/#featured-projects">
               <a>Portfolio</a>
             </Link>
@@ -40,15 +40,15 @@ export function Navigation() {
               <a>About</a>
             </Link>
           </li>
-          <li>
+          <li className="hide">
             <a href="/beth.pdf">Resume</a>
           </li>
-          <li className="hide">
+          <li>
             <Link href="/blog">
               <a>Blog</a>
             </Link>
           </li>
-          <li>
+          <li className="hide">
             <Link href="/#contact">
               <a>Contact</a>
             </Link>

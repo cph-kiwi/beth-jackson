@@ -569,6 +569,19 @@ body {
   color: #976a6a;
 }
 
+.blog-text-wrapper > ul {
+  list-style: none;
+}
+
+.blog-text-wrapper > ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #fcd1d1; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 .timer {
   border: 1px solid #142850;
   width: 85%;
@@ -757,5 +770,13 @@ body {
 
   .contact-p {
     text-align: justify;
+  }
+
+  .blog-contents-page {
+    margin: 0 15px 0 15px;
+  }
+
+  .blog-post-contents {
+    margin: 0 15px 0 15px;
   }
 }
