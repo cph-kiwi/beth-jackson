@@ -6,8 +6,9 @@ import renderToString from "next-mdx-remote/render-to-string";
 import hydrate from "next-mdx-remote/hydrate";
 import { getAllPosts, getBlogBySlug } from "../../src/blog-support-helpers";
 import { Timer } from "../../src/components/Timer";
+import { BlogTextWrapper } from "../../src/components/BlogTextWrapper";
 
-const components = { Timer };
+const components = { Timer, BlogTextWrapper };
 
 export async function getStaticProps({ params }) {
   const { data, content } = getBlogBySlug(params.slug);
@@ -36,7 +37,7 @@ export default function BlogPost({ source, meta }) {
   // console.log(source, meta);
   const content = hydrate(source, { components });
   return (
-    <div className="blog-post-outer">
+    <div>
       <Head>
         <title>Beth Jackson - Blog post</title>
         <link
@@ -54,9 +55,8 @@ export default function BlogPost({ source, meta }) {
       </Head>
       <a id="top" />
       <Navigation />
-      <div className="blog-post-body">
-        <h1 className="blog-post-outer-heading">CPH-Kiwi's recipes</h1>
-        <div className="blog-post-mdx">{content}</div>
+      <div className="blog-post-wrapper">
+        <div className="blog-post-contents">{content}</div>
       </div>
     </div>
   );
