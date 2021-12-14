@@ -38,9 +38,57 @@ export default function App() {
         </div>
       </div>
 
-      <div className="drum-kit" id="featured-projects">
+      <div className="guide" id="featured-projects">
+        <div className="guide-container">
+          <h5 className="guide-h5">Featured projects</h5>
+          <div className="guide-columns-container">
+            <div className="guide-text-column">
+              <h3 className="guide-h3">Guide IT</h3>
+              <p className="guide-p">
+                This project idea was undertaken as part of the{" "}
+                <a href="https://javascript30.com/">javascript30</a> course by{" "}
+                <a href="https://wesbos.com/">Wes Bos</a>. I personalised it by
+                adding a metronome.
+              </p>
+              <div className="guide-link-to-more">
+                <a href="https://guide-it-staging.herokuapp.com/">
+                  Visit Guide IT and take the quiz!
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Screenshot%202020-09-07%20at%2013.52.53.png"
+              alt="screenshot of the drum kit with metronome"
+            />{" "}
+          </div>
+        </div>
+      </div>
+
+      <div className="meal">
+        <div className="meal-container">
+          <div className="meal-columns-container">
+            <div className="meal-text-column">
+              <h3 className="meal-h3">Meal-sharing app</h3>
+              <p className="meal-p">
+                I created a personal webpage for a client. This webpage features
+                a guestbook where visitors can leave a message.
+              </p>
+              <div className="meal-link-to-more">
+                <a href="https://karenmeierrasmussen.dk/">
+                  Visit Karen Meier Rasmussen
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Screenshot%202020-09-02%20at%2011.13.45.png"
+              alt="screenshot of Karen Meier Rasmussens webpage"
+            />{" "}
+          </div>
+        </div>
+      </div>
+
+      <div className="drum-kit">
         <div className="drum-kit-container">
-          <h5 className="drum-kit-h5">Featured projects</h5>
           <div className="drum-kit-columns-container">
             <div className="drum-kit-text-column">
               <h3 className="drum-kit-h3">Drum Kit</h3>
