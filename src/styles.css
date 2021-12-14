@@ -113,8 +113,7 @@ body {
   color: var(--accent-red);
 }
 
-
-.guideit-container
+.guideit-container {
   /* background: var(--lightgrey-background); */
   padding-left: 64px;
   padding-right: 64px;
