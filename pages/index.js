@@ -49,8 +49,8 @@ export default function App() {
               <p className="guideit-p">
                 I worked on this GuideIT website as part of my final group
                 project with Hack Your Future. I implemented the quiz
-                functionality. This was my first project working in colaboration
-                with other developers.
+                functionality. This was my first project working in
+                collaboration with other developers.
               </p>
               <div className="guideit-link-to-more">
                 <a href="https://guide-it-production.herokuapp.com/">
