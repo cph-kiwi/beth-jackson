@@ -82,7 +82,10 @@ export default function App() {
                 </a>
               </div>
             </div>
-            <img src="" alt="screenshot of Dinner Time" />{" "}
+            <img
+              src="https://github.com/cph-kiwi/cph-kiwi-images/blob/master/Screenshot%202021-12-14%20at%2013.38.07.png?raw=true"
+              alt="screenshot of Dinner Time"
+            />{" "}
           </div>
         </div>
       </div>
