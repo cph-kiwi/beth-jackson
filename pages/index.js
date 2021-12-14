@@ -28,9 +28,11 @@ export default function App() {
           <h1 className="intro-h1">Hi, I'm Beth.</h1>
           <h2 className="intro-h2">Web developer.</h2>
           <p className="intro-p">
-            Currently based in Copenhagen, Denmark, studying Danish and web
-            development. I have focused on HTML, CSS, Javascript and React to
-            start with, and continue to study and work on private projects.
+            Currently based in Copenhagen, Denmark, studying web development. I
+            have focused on HTML, CSS, Javascript and React to start with, and
+            continue to study and work on private projects. I completed a
+            bootcamp called Hack Your Future, and graduated in June 2021. I have
+            also completed the PD3 Danish language course.
           </p>
           <div className="intro-link-to-more">
             <a href="#featured-projects">Check out my work</a>
@@ -63,10 +65,9 @@ export default function App() {
 
       <div className="meal-sharing">
         <div className="meal-sharing-container">
-          <h5 className="meal-sharing-h5">Featured projects</h5>
           <div className="meal-sharing-columns-container">
             <div className="meal-sharing-text-column">
-              <h3 className="meal-sharing-h3">Drum Kit</h3>
+              <h3 className="meal-sharing-h3">Meal sharing app</h3>
               <p className="meal-sharing-p">
                 This was my personal project from Hack Your Future. I developed
                 the front end, then the database, and finally the routers.
@@ -84,7 +85,6 @@ export default function App() {
 
       <div className="drum-kit">
         <div className="drum-kit-container">
-          <h5 className="drum-kit-h5">Featured projects</h5>
           <div className="drum-kit-columns-container">
             <div className="drum-kit-text-column">
               <h3 className="drum-kit-h3">Drum Kit</h3>

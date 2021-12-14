@@ -177,7 +177,7 @@ body {
 }
 
 .meal-sharing-container {
-  /* background: var(--lightgrey-background); */
+  background: var(--lightgrey-background);
   padding-left: 64px;
   padding-right: 64px;
   padding-top: 76px;
