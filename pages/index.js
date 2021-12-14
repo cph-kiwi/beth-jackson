@@ -67,18 +67,19 @@ export default function App() {
         <div className="meal-sharing-container">
           <div className="meal-sharing-columns-container">
             <div className="meal-sharing-text-column">
-              <h3 className="meal-sharing-h3">Meal sharing app</h3>
+              <h3 className="meal-sharing-h3">Dinner Time</h3>
               <p className="meal-sharing-p">
                 This was my personal project from Hack Your Future. I developed
-                the front end, then the database, and finally the routers.
+                the front end, then the database using SQL, and finally the
+                routers.
               </p>
               <div className="meal-sharing-link-to-more">
                 <a href="https://hyf-meal-sharing.herokuapp.com/">
-                  Visit the meal-sharing app.
+                  Visit Dinner Time!
                 </a>
               </div>
             </div>
-            <img src="" alt="screenshot of the meal-sharing app" />{" "}
+            <img src="" alt="screenshot of Dinner Time" />{" "}
           </div>
         </div>
       </div>
