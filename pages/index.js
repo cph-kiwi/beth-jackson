@@ -58,7 +58,10 @@ export default function App() {
                 </a>
               </div>
             </div>
-            <img src="" alt="screenshot of the GuideIT website" />
+            <img
+              src="https://github.com/cph-kiwi/cph-kiwi-images/blob/master/Screenshot%202021-12-14%20at%2013.49.49.png?raw=true"
+              alt="screenshot of the GuideIT website"
+            />
           </div>
         </div>
       </div>
