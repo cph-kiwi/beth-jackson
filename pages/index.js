@@ -38,7 +38,51 @@ export default function App() {
         </div>
       </div>
 
-      <div className="drum-kit" id="featured-projects">
+      <div className="guideit" id="featured-projects">
+        <div className="guideit-container">
+          <h5 className="guideit-h5">Featured projects</h5>
+          <div className="guideit-columns-container">
+            <div className="guideit-text-column">
+              <h3 className="guideit-h3">GuideIT</h3>
+              <p className="guideit-p">
+                I worked on this GuideIT website as part of my final group
+                project with Hack Your Future. I implemented the quiz
+                functionality. This was my first project working in colaboration
+                with other developers.
+              </p>
+              <div className="guideit-link-to-more">
+                <a href="https://guide-it-production.herokuapp.com/">
+                  Visit the GuideIT website and take the quiz!
+                </a>
+              </div>
+            </div>
+            <img src="" alt="screenshot of the GuideIT website" />
+          </div>
+        </div>
+      </div>
+
+      <div className="meal-sharing">
+        <div className="meal-sharing-container">
+          <h5 className="meal-sharing-h5">Featured projects</h5>
+          <div className="meal-sharing-columns-container">
+            <div className="meal-sharing-text-column">
+              <h3 className="meal-sharing-h3">Drum Kit</h3>
+              <p className="meal-sharing-p">
+                This was my personal project from Hack Your Future. I developed
+                the front end, then the database, and finally the routers.
+              </p>
+              <div className="meal-sharing-link-to-more">
+                <a href="https://hyf-meal-sharing.herokuapp.com/">
+                  Visit the meal-sharing app.
+                </a>
+              </div>
+            </div>
+            <img src="" alt="screenshot of the meal-sharing app" />{" "}
+          </div>
+        </div>
+      </div>
+
+      <div className="drum-kit">
         <div className="drum-kit-container">
           <h5 className="drum-kit-h5">Featured projects</h5>
           <div className="drum-kit-columns-container">
