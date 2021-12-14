@@ -28,9 +28,11 @@ export default function App() {
           <h1 className="intro-h1">Hi, I'm Beth.</h1>
           <h2 className="intro-h2">Web developer.</h2>
           <p className="intro-p">
-            Currently based in Copenhagen, Denmark, studying Danish and web
-            development. I have focused on HTML, CSS, Javascript and React to
-            start with, and continue to study and work on private projects.
+            Currently based in Copenhagen, Denmark, studying web development. I
+            have focused on HTML, CSS, Javascript and React to start with, and
+            continue to study and work on private projects. I completed a
+            bootcamp called Hack Your Future, and graduated in June 2021. I have
+            also completed the PD3 Danish language course.
           </p>
           <div className="intro-link-to-more">
             <a href="#featured-projects">Check out my work</a>
@@ -38,50 +40,51 @@ export default function App() {
         </div>
       </div>
 
-      <div className="guide" id="featured-projects">
-        <div className="guide-container">
-          <h5 className="guide-h5">Featured projects</h5>
-          <div className="guide-columns-container">
-            <div className="guide-text-column">
-              <h3 className="guide-h3">Guide IT</h3>
-              <p className="guide-p">
-                This project idea was undertaken as part of the{" "}
-                <a href="https://javascript30.com/">javascript30</a> course by{" "}
-                <a href="https://wesbos.com/">Wes Bos</a>. I personalised it by
-                adding a metronome.
+      <div className="guideit" id="featured-projects">
+        <div className="guideit-container">
+          <h5 className="guideit-h5">Featured projects</h5>
+          <div className="guideit-columns-container">
+            <div className="guideit-text-column">
+              <h3 className="guideit-h3">GuideIT</h3>
+              <p className="guideit-p">
+                I worked on this GuideIT website as part of my final group
+                project with Hack Your Future. I implemented the quiz
+                functionality. This was my first project working in
+                collaboration with other developers.
               </p>
-              <div className="guide-link-to-more">
-                <a href="https://guide-it-staging.herokuapp.com/">
-                  Visit Guide IT and take the quiz!
+              <div className="guideit-link-to-more">
+                <a href="https://guide-it-production.herokuapp.com/">
+                  Visit the GuideIT website and take the quiz!
                 </a>
               </div>
             </div>
             <img
-              src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Screenshot%202020-09-07%20at%2013.52.53.png"
-              alt="screenshot of the drum kit with metronome"
-            />{" "}
+              src="https://github.com/cph-kiwi/cph-kiwi-images/blob/master/Screenshot%202021-12-14%20at%2013.49.49.png?raw=true"
+              alt="screenshot of the GuideIT website"
+            />
           </div>
         </div>
       </div>
 
-      <div className="meal">
-        <div className="meal-container">
-          <div className="meal-columns-container">
-            <div className="meal-text-column">
-              <h3 className="meal-h3">Meal-sharing app</h3>
-              <p className="meal-p">
-                I created a personal webpage for a client. This webpage features
-                a guestbook where visitors can leave a message.
+      <div className="meal-sharing">
+        <div className="meal-sharing-container">
+          <div className="meal-sharing-columns-container">
+            <div className="meal-sharing-text-column">
+              <h3 className="meal-sharing-h3">Dinner Time</h3>
+              <p className="meal-sharing-p">
+                This was my personal project from Hack Your Future. I developed
+                the front end, then the database using SQL, and finally the
+                routers.
               </p>
-              <div className="meal-link-to-more">
-                <a href="https://karenmeierrasmussen.dk/">
-                  Visit Karen Meier Rasmussen
+              <div className="meal-sharing-link-to-more">
+                <a href="https://hyf-meal-sharing.herokuapp.com/">
+                  Visit Dinner Time!
                 </a>
               </div>
             </div>
             <img
-              src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Screenshot%202020-09-02%20at%2011.13.45.png"
-              alt="screenshot of Karen Meier Rasmussens webpage"
+              src="https://github.com/cph-kiwi/cph-kiwi-images/blob/master/Screenshot%202021-12-14%20at%2013.38.07.png?raw=true"
+              alt="screenshot of Dinner Time"
             />{" "}
           </div>
         </div>
