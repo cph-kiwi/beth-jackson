@@ -41,7 +41,7 @@ export function Navigation() {
             </Link>
           </li>
           <li className="hide">
-            <a href="/beth.pdf">Resume</a>
+            <a href="/resume.pdf">Resume</a>
           </li>
           <li>
             <Link href="/blog">
