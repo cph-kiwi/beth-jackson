@@ -40,7 +40,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="guideit" id="featured-projects">
+      <div className="guideit" id="featured-projects" id="guideit">
         <div className="guideit-container">
           <h5 className="guideit-h5">Featured projects</h5>
           <div className="guideit-columns-container">
@@ -66,7 +66,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="meal-sharing">
+      <div className="meal-sharing" id="meal-sharing">
         <div className="meal-sharing-container">
           <div className="meal-sharing-columns-container">
             <div className="meal-sharing-text-column">
@@ -90,7 +90,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="drum-kit">
+      <div className="drum-kit" id="drum-kit">
         <div className="drum-kit-container">
           <div className="drum-kit-columns-container">
             <div className="drum-kit-text-column">
@@ -115,7 +115,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="karen" id="featured-projects">
+      <div className="karen" id="karen">
         <div className="karen-container">
           <div className="karen-columns-container">
             <div className="karen-text-column">
@@ -138,7 +138,7 @@ export default function App() {
         </div>
       </div>
 
-      <div className="andreas-enterprises" id="featured-projects">
+      <div className="andreas-enterprises" id="andreas-enterprises">
         <div className="andreas-enterprises-container">
           <div className="andreas-enterprises-columns-container">
             <div className="andreas-enterprises-text-column">
@@ -184,6 +184,7 @@ export default function App() {
           </div>
         </div>
       </div>
+
       <div className="about" id="about">
         <div className="about-container">
           <h5 className="about-h5">About me</h5>
