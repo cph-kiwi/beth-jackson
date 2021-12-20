@@ -40,8 +40,8 @@ export default function App() {
         </div>
       </div>
 
-      <div className="guideit" id="featured-projects" id="guideit">
-        <div className="guideit-container">
+      <div className="guideit" id="guideit">
+        <div className="guideit-container" id="featured-projects">
           <h5 className="guideit-h5">Featured projects</h5>
           <div className="guideit-columns-container">
             <div className="guideit-text-column">
@@ -145,12 +145,11 @@ export default function App() {
               <h3 className="andreas-enterprises-h3">Andreas Enterprises</h3>
               <p className="andreas-enterprises-p">
                 I created a personal webpage for a client. The client was keen
-                to have a guestbook where visitors can leave a message.
+                to have a guestbook where visitors can leave a message so I used
+                Firestore to set that up.
               </p>
               <div className="andreas-enterprises-link-to-more">
-                <a href="https://andreas.enterprises/">
-                  Visit Andreas Enterprises
-                </a>
+                <a href="https://andreas.social/">Visit Andreas Enterprises</a>
               </div>
             </div>
             <img
