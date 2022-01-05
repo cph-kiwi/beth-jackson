@@ -47,6 +47,14 @@ export default function Blog({ posts }) {
       <div className="blog-contents-page">
         <h1 className="blog-main-heading">CPH-Kiwi's recipes</h1>
         <p className="blog-text-wrapper">
+          I created this blog as a project to contribute toward my portfolio. I
+          have made some components to add to the complexity of the project,
+          such as the timer. I know many people would look to package products
+          to create a blog, but everything is custom built here. I wrote this
+          using React and Next.js. The website is deployed using Vercel. I write
+          the blog in mdx.
+        </p>
+        <p className="blog-text-wrapper">
           I have a terrible memory. I make pancakes every weekend, and I still
           have to look up the recipe. After reading a whole bunch of
           organisational books, I have discovered that this isn't a bad thing.
