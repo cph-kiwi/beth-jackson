@@ -695,6 +695,10 @@ body {
   color: #976a6a;
 }
 
+.blog-post-contents a {
+  text-decoration: underline;
+}
+
 .blog-text-wrapper > ul {
   list-style: none;
 }
