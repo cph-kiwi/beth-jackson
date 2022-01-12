@@ -113,6 +113,69 @@ body {
   color: var(--accent-red);
 }
 
+.weather-container {
+  background: var(--lightgrey-background);
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 76px;
+  background-size: cover;
+  display: block;
+  padding-bottom: 64px;
+}
+
+.weather-h5 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.weather-columns-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.weather-text-column {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 40%;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.weather-h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.weather-p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--darkgrey);
+}
+
+.weather-link-to-more a {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.weather-link-to-more a:hover {
+  color: var(--accent-red);
+}
+
+.weather-columns-container img {
+  width: 40%;
+}
+
 .guideit-container {
   /* background: var(--lightgrey-background); */
   padding-left: 64px;
@@ -772,6 +835,31 @@ body {
 
   .intro-p {
     text-align: justify;
+  }
+
+  .weather-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .weather-columns-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .weather-text-column {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .weather-p {
+    text-align: justify;
+  }
+
+  .weather-columns-container img {
+    padding-bottom: 50px;
+    width: 100%;
   }
 
   .guideit-container {

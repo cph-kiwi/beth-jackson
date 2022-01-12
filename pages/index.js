@@ -40,9 +40,35 @@ export default function App() {
         </div>
       </div>
 
+      <div className="weather" id="weather">
+        <div className="weather-container" id="featured-projects">
+          <h5 className="weather-h5">Featured projects</h5>
+          <div className="weather-columns-container">
+            <div className="weather-text-column">
+              <h3 className="weather-h3">Weather app</h3>
+              <p className="weather-p">
+                I wrote this weather app in React using TypeScript and Next.js.
+                I wanted the app to load with the user's current location's
+                weather already loaded, so I had to figure out how to access the
+                location of the user. I also filled out the backend by creating
+                a proxy server to hide the api key.
+              </p>
+              <div className="weather-link-to-more">
+                <a href="https://weather.cph.kiwi/">
+                  Visit the weather app and see the forecast for tomorrow!
+                </a>
+              </div>
+            </div>
+            <img
+              src="https://github.com/cph-kiwi/cph-kiwi-images/blob/master/Screenshot%202022-01-12%20at%2014.09.38.png?raw=true"
+              alt="screenshot of the weather website"
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="guideit" id="guideit">
-        <div className="guideit-container" id="featured-projects">
-          <h5 className="guideit-h5">Featured projects</h5>
+        <div className="guideit-container">
           <div className="guideit-columns-container">
             <div className="guideit-text-column">
               <h3 className="guideit-h3">GuideIT</h3>
