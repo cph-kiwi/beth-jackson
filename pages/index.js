@@ -53,10 +53,23 @@ export default function App() {
                 location of the user. I also filled out the backend by creating
                 a proxy server to hide the api key.
               </p>
+              <ul className="tech-list">
+                <li className="tech-list-item">HTML</li>
+                <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">React</li>
+                <li className="tech-list-item">TypeScript</li>
+                <li className="tech-list-item">Next.js</li>
+                <li className="tech-list-item">Styled-components</li>
+                <li className="tech-list-item">Vercel</li>
+              </ul>
               <div className="weather-link-to-more">
                 <a href="https://weather.cph.kiwi/">
                   Visit the weather app and see the forecast for tomorrow!
                 </a>
+              </div>
+              <div className="weather-link-to-more">
+                <a href="https://github.com/cph-kiwi/weather">View source.</a>
               </div>
             </div>
             <img
@@ -78,9 +91,29 @@ export default function App() {
                 functionality. This was my first project working in
                 collaboration with other developers.
               </p>
+              <ul className="tech-list">
+                <li className="tech-list-item">HTML</li>
+                <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">React</li>
+                <li className="tech-list-item">Storybook</li>
+                <li className="tech-list-item">Heroku</li>
+                <li className="tech-list-item">Knex</li>
+                <li className="tech-list-item">Firebase</li>
+                <li className="tech-list-item">NodeJs</li>
+                <li className="tech-list-item">MySQL</li>
+                <li className="tech-list-item">Express</li>
+                <li className="tech-list-item">Swagger</li>
+                <li className="tech-list-item">Figma</li>
+              </ul>
               <div className="guideit-link-to-more">
                 <a href="https://guide-it-production.herokuapp.com/">
                   Visit the GuideIT website and take the quiz!
+                </a>
+              </div>
+              <div className="guideit-link-to-more">
+                <a href="https://github.com/HackYourFuture-CPH/Guide-IT">
+                  View source.
                 </a>
               </div>
             </div>
@@ -102,9 +135,26 @@ export default function App() {
                 the front end, then the database using SQL, and finally the
                 routers.
               </p>
+              <ul className="tech-list">
+                <li className="tech-list-item">HTML</li>
+                <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">React</li>
+                <li className="tech-list-item">Heroku</li>
+                <li className="tech-list-item">NodeJs</li>
+                <li className="tech-list-item">Postman</li>
+                <li className="tech-list-item">MySQL</li>
+                <li className="tech-list-item">Express</li>
+                <li className="tech-list-item">Knex</li>
+              </ul>
               <div className="meal-sharing-link-to-more">
                 <a href="https://hyf-meal-sharing.herokuapp.com/">
                   Visit Dinner Time!
+                </a>
+              </div>
+              <div className="meal-sharing-link-to-more">
+                <a href="https://github.com/cph-kiwi/meal-sharing">
+                  View source.
                 </a>
               </div>
             </div>
@@ -127,9 +177,20 @@ export default function App() {
                 <a href="https://wesbos.com/">Wes Bos</a>. I personalised it by
                 adding a metronome.
               </p>
+              <ul className="tech-list">
+                <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">HTML</li>
+                <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">Vercel</li>
+              </ul>
               <div className="drum-kit-link-to-more">
                 <a href="https://drum-kit.cph.kiwi/">
                   Visit the drum kit with metronome
+                </a>
+              </div>
+              <div className="drum-kit-link-to-more">
+                <a href="https://github.com/cph-kiwi/personalised-drum-kit">
+                  View source.
                 </a>
               </div>
             </div>
@@ -150,10 +211,21 @@ export default function App() {
                 I created a personal webpage for a client. This webpage features
                 a guestbook where visitors can leave a message.
               </p>
+              <ul className="tech-list">
+                <li className="tech-list-item">HTML</li>
+                <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">React</li>
+                <li className="tech-list-item">Vercel</li>
+                <li className="tech-list-item">Firebase</li>
+              </ul>
               <div className="karen-link-to-more">
                 <a href="https://karenmeierrasmussen.dk/">
                   Visit Karen Meier Rasmussen
                 </a>
+              </div>
+              <div className="karen-link-to-more">
+                <a href="https://github.com/cph-kiwi/karen">View source.</a>
               </div>
             </div>
             <img
@@ -174,8 +246,21 @@ export default function App() {
                 to have a guestbook where visitors can leave a message so I used
                 Firestore to set that up.
               </p>
+              <ul className="tech-list">
+                <li className="tech-list-item">HTML</li>
+                <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">React</li>
+                <li className="tech-list-item">Vercel</li>
+                <li className="tech-list-item">Firebase</li>
+              </ul>
               <div className="andreas-enterprises-link-to-more">
                 <a href="https://andreas.social/">Visit Andreas Enterprises</a>
+              </div>
+              <div className="andreas-enterprises-link-to-more">
+                <a href="https://github.com/cph-kiwi/andreas-moller">
+                  View source.
+                </a>
               </div>
             </div>
             <img
@@ -196,9 +281,21 @@ export default function App() {
                 into Pig Latin (a fun, pseudo-language, mostly used by children
                 in play).
               </p>
+              <ul className="tech-list">
+                <li className="tech-list-item">HTML</li>
+                <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">React</li>
+                <li className="tech-list-item">Vercel</li>
+              </ul>
               <div className="pig-latin-link-to-more">
                 <a href="https://pig-latin.cph.kiwi/">
                   Visit Pig Latin Translator
+                </a>
+              </div>
+              <div className="pig-latin-link-to-more">
+                <a href="https://github.com/cph-kiwi/pig-latin-translator">
+                  View source.
                 </a>
               </div>
             </div>

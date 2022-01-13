@@ -117,10 +117,14 @@ body {
   background: var(--lightgrey-background);
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
+  /*
+padding-top: 76px;
+padding-bottom: 64px;
+*/
 }
 
 .weather-h5 {
@@ -159,6 +163,11 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+.weather-link-to-more {
+  padding-bottom: 16px;
 }
 
 .weather-link-to-more a {
@@ -176,14 +185,33 @@ body {
   width: 40%;
 }
 
+.tech-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  margin: 24px 0px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.tech-list-item {
+  list-style-type: none;
+  background: white;
+  border-radius: 999px;
+  padding: 4px 8px;
+  box-shadow: 0.8px 1.6px 1.6px hsl(0deg 0% 0% / 0.48);
+  font-size: 0.8em;
+}
+
 .guideit-container {
   /* background: var(--lightgrey-background); */
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
 }
 
 .guideit-h5 {
@@ -222,6 +250,11 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+.guideit-link-to-more {
+  padding-bottom: 16px;
 }
 
 .guideit-link-to-more a {
@@ -243,10 +276,10 @@ body {
   background: var(--lightgrey-background);
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
 }
 
 .meal-sharing-h5 {
@@ -285,6 +318,11 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+.meal-sharing-link-to-more {
+  padding-bottom: 16px;
 }
 
 .meal-sharing-link-to-more a {
@@ -306,10 +344,10 @@ body {
   /* background: var(--lightgrey-background); */
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
 }
 
 .drum-kit-h5 {
@@ -348,6 +386,11 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+.drum-kit-link-to-more {
+  padding-bottom: 16px;
 }
 
 .drum-kit-link-to-more a {
@@ -369,10 +412,10 @@ body {
   background: var(--lightgrey-background);
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
 }
 
 .karen-columns-container {
@@ -402,6 +445,11 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+.karen-link-to-more {
+  padding-bottom: 16px;
 }
 
 .karen-link-to-more a {
@@ -423,10 +471,10 @@ body {
   /* background: var(--lightgrey-background); */
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
 }
 
 .andreas-enterprises-h5 {
@@ -465,6 +513,11 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+.andreas-enterprises-link-to-more {
+  padding-bottom: 16px;
 }
 
 .andreas-enterprises-link-to-more a {
@@ -486,10 +539,10 @@ body {
   background: var(--lightgrey-background);
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
 }
 
 .pig-latin-h5 {
@@ -528,6 +581,11 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: var(--darkgrey);
+  margin-bottom: 0;
+}
+
+.pig-latin-link-to-more {
+  padding-bottom: 16px;
 }
 
 .pig-latin-link-to-more a {
@@ -549,10 +607,10 @@ body {
   /* background: var(--lightgrey-background); */
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
+  padding-bottom: 200px;
   background-size: cover;
   display: block;
-  padding-bottom: 64px;
 }
 
 .about-h5 {
@@ -601,7 +659,7 @@ body {
   background: var(--lightgrey-background);
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 76px;
+  padding-top: 100px;
   background-size: cover;
   display: flex;
   flex-direction: column;
