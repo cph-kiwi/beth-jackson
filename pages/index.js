@@ -57,6 +57,7 @@ export default function App() {
                 <li className="tech-list-item">HTML</li>
                 <li className="tech-list-item">CSS</li>
                 <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">Git</li>
                 <li className="tech-list-item">React</li>
                 <li className="tech-list-item">TypeScript</li>
                 <li className="tech-list-item">Next.js</li>
@@ -95,6 +96,7 @@ export default function App() {
                 <li className="tech-list-item">HTML</li>
                 <li className="tech-list-item">CSS</li>
                 <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">Git</li>
                 <li className="tech-list-item">React</li>
                 <li className="tech-list-item">Storybook</li>
                 <li className="tech-list-item">Heroku</li>
@@ -139,6 +141,7 @@ export default function App() {
                 <li className="tech-list-item">HTML</li>
                 <li className="tech-list-item">CSS</li>
                 <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">Git</li>
                 <li className="tech-list-item">React</li>
                 <li className="tech-list-item">Heroku</li>
                 <li className="tech-list-item">NodeJs</li>
@@ -181,6 +184,7 @@ export default function App() {
                 <li className="tech-list-item">JavaScript</li>
                 <li className="tech-list-item">HTML</li>
                 <li className="tech-list-item">CSS</li>
+                <li className="tech-list-item">Git</li>
                 <li className="tech-list-item">Vercel</li>
               </ul>
               <div className="drum-kit-link-to-more">
@@ -215,6 +219,7 @@ export default function App() {
                 <li className="tech-list-item">HTML</li>
                 <li className="tech-list-item">CSS</li>
                 <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">Git</li>
                 <li className="tech-list-item">React</li>
                 <li className="tech-list-item">Vercel</li>
                 <li className="tech-list-item">Firebase</li>
@@ -250,6 +255,7 @@ export default function App() {
                 <li className="tech-list-item">HTML</li>
                 <li className="tech-list-item">CSS</li>
                 <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">Git</li>
                 <li className="tech-list-item">React</li>
                 <li className="tech-list-item">Vercel</li>
                 <li className="tech-list-item">Firebase</li>
@@ -285,6 +291,7 @@ export default function App() {
                 <li className="tech-list-item">HTML</li>
                 <li className="tech-list-item">CSS</li>
                 <li className="tech-list-item">JavaScript</li>
+                <li className="tech-list-item">Git</li>
                 <li className="tech-list-item">React</li>
                 <li className="tech-list-item">Vercel</li>
               </ul>
