@@ -354,10 +354,7 @@ export default function App() {
                 position in the tech sector. Let's get in touch.
               </p>
               <div className="social-container">
-                <a
-                  href="https://www.linkedin.com/in/beth-jackson-4a29ab193/"
-                  target="_blank"
-                >
+                <a href="https://www.linkedin.com/in/cph-kiwi/" target="_blank">
                   <LinkedInIcon />
                 </a>
 

@@ -140,13 +140,13 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .weather-text-column {
   display: flex;
   flex-direction: column;
-  height: 300px;
+
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
@@ -227,13 +227,13 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .guideit-text-column {
   display: flex;
   flex-direction: column;
-  height: 300px;
+
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
@@ -295,13 +295,13 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .meal-sharing-text-column {
   display: flex;
   flex-direction: column;
-  height: 300px;
+
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
@@ -363,13 +363,13 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .drum-kit-text-column {
   display: flex;
   flex-direction: column;
-  height: 300px;
+
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
@@ -422,13 +422,13 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .karen-text-column {
   display: flex;
   flex-direction: column;
-  height: 300px;
+
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
@@ -490,13 +490,13 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .andreas-enterprises-text-column {
   display: flex;
   flex-direction: column;
-  height: 300px;
+
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
@@ -558,13 +558,13 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .pig-latin-text-column {
   display: flex;
   flex-direction: column;
-  height: 300px;
+
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
@@ -680,14 +680,14 @@ padding-bottom: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .contact-text-column {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 300px;
+  height: 400px;
   width: 40%;
   justify-content: flex-start;
   align-content: space-between;
