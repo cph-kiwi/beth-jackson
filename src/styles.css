@@ -970,6 +970,31 @@ padding-bottom: 64px;
     width: 100%;
   }
 
+  .drum-kit-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .drum-kit-columns-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .drum-kit-text-column {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .drum-kit-p {
+    text-align: justify;
+  }
+
+  .drum-kit-columns-container img {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
   .karen-container {
     padding-left: 50px;
     padding-right: 50px;
