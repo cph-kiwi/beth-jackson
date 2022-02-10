@@ -1130,4 +1130,9 @@ padding-bottom: 64px;
   .blog-post-contents {
     margin: 0 15px 0 15px;
   }
+
+  .blog-text-wrapper p > a:link {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
 }
