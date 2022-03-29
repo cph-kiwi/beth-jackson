@@ -333,7 +333,7 @@ export default function App() {
               </p>
             </div>
             <img
-              src="https://raw.githubusercontent.com/cph-kiwi/cph-kiwi-images/master/Profile%20picture.jpg"
+              src="https://github.com/cph-kiwi/cph-kiwi-images/blob/master/profess_profile_pic%20compressed.JPG?raw=true"
               alt="Portrait of Beth Jackson"
             />{" "}
           </div>
