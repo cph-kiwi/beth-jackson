@@ -743,7 +743,7 @@ padding-bottom: 64px;
 
 .Blog {
 	min-height: 100vh;
-	background-color: #bb2649;
+	background-color: #ffbe98;
 	padding-top: 82px;
 	padding-bottom: 82px;
 }
@@ -807,7 +807,7 @@ padding-bottom: 64px;
 
 .blog-post-wrapper {
 	min-height: 100vh;
-	background-color: #bb2649;
+	background-color: #ffbe98;
 	padding-top: 82px;
 	padding-bottom: 82px;
 }
@@ -830,7 +830,7 @@ padding-bottom: 64px;
 
 .blog-text-wrapper > ul li::before {
 	content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-	color: #bb2649; /* Change the color */
+	color: #ffbe98; /* Change the color */
 	font-weight: bold; /* If you want it to be bold */
 	display: inline-block; /* Needed to add space between the bullet and the text */
 	width: 1em; /* Also needed for space (tweak if needed) */
