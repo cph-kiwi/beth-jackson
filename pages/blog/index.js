@@ -27,11 +27,10 @@ export async function getStaticProps() {
 export default function Blog({ posts }) {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filteredPosts, setFilteredPosts] = useState(posts);
+	const [isSearched, setIsSearched] = useState(false);
 
-	const handleSearch = (event) => {
-		const term = event.target.value;
-		setSearchTerm(term);
-
+	const handleSearch = () => {
+		const term = searchTerm.toLowerCase();
 		const filtered = posts.filter((post) => {
 			const titleMatch = post.title.toLowerCase().includes(term);
 			const tagMatch = post.tags.some((tag) =>
@@ -40,9 +39,18 @@ export default function Blog({ posts }) {
 			const ingredientMatch = post.ingredients.some((ingredient) =>
 				ingredient.toLowerCase().includes(term)
 			);
+
 			return titleMatch || tagMatch || ingredientMatch;
 		});
+
 		setFilteredPosts(filtered);
+		setIsSearched(true);
+	};
+
+	const handleKeyDown = (event) => {
+		if (event.key === "Enter") {
+			handleSearch();
+		}
 	};
 
 	return (
@@ -94,21 +102,32 @@ export default function Blog({ posts }) {
 							id="blog-search"
 							name="blog-search"
 							value={searchTerm}
-							onChange={handleSearch}
+							onChange={(event) => {
+								setSearchTerm(event.target.value);
+							}}
+							onKeyDown={handleKeyDown}
 						/>
-						<button type="button" className="search-button">
+						<button
+							type="button"
+							className="search-button"
+							onClick={handleSearch}
+						>
 							Search
 						</button>
 					</div>
-					{searchTerm !== "" && (
+					{isSearched && (
 						<ul className="blog-search-results">
-							{filteredPosts.map((post) => (
-								<li key={post.id} className="blog-li">
-									<Link legacyBehavior href={`/blog/${post.slug}`}>
-										<a>{post.title}</a>
-									</Link>
-								</li>
-							))}
+							{filteredPosts.length > 0 ? (
+								filteredPosts.map((post) => (
+									<li key={post.id} className="blog-li">
+										<Link legacyBehavior href={`/blog/${post.slug}`}>
+											<a>{post.title}</a>
+										</Link>
+									</li>
+								))
+							) : (
+								<li>No matching posts found</li>
+							)}
 						</ul>
 					)}
 				</div>
