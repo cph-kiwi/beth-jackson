@@ -48,6 +48,9 @@ export default function Blog({ posts }) {
 	};
 
 	const handleKeyDown = (event) => {
+		if (searchTerm === "") {
+			setIsSearched(false);
+		}
 		if (event.key === "Enter") {
 			handleSearch();
 		}
@@ -115,7 +118,7 @@ export default function Blog({ posts }) {
 							Search
 						</button>
 					</div>
-					{isSearched && (
+					{isSearched && searchTerm !== "" && (
 						<ul className="blog-search-results">
 							{filteredPosts.length > 0 ? (
 								filteredPosts.map((post) => (

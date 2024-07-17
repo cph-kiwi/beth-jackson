@@ -798,6 +798,7 @@ padding-bottom: 64px;
 
 .blog-search-input {
 	width: 70%;
+	outline: none;
 }
 
 .blog-search-results {
@@ -1153,6 +1154,10 @@ padding-bottom: 64px;
 
 	.blog-contents-page {
 		margin: 0 15px 0 15px;
+	}
+
+	.blog-search-container {
+		width: 100%;
 	}
 
 	.blog-post-contents {
