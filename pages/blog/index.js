@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { Navigation } from "../../src/Navigation";
@@ -25,6 +25,26 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }) {
+	const [searchTerm, setSearchTerm] = useState("");
+	const [filteredPosts, setFilteredPosts] = useState(posts);
+
+	const handleSearch = (event) => {
+		const term = event.target.value;
+		setSearchTerm(term);
+
+		const filtered = posts.filter((post) => {
+			const titleMatch = post.title.toLowerCase().includes(term);
+			const tagMatch = post.tags.some((tag) =>
+				tag.toLowerCase().includes(term)
+			);
+			const ingredientMatch = post.ingredients.some((ingredient) =>
+				ingredient.toLowerCase().includes(term)
+			);
+			return titleMatch || tagMatch || ingredientMatch;
+		});
+		setFilteredPosts(filtered);
+	};
+
 	return (
 		<div className="Blog">
 			<Head>
@@ -66,23 +86,38 @@ export default function Blog({ posts }) {
 				</p>
 
 				<div className="blog-search-container">
-					<input
-						type="text"
-						placeholder="Search blog posts..."
-						className="blog-search-input"
-						id="blog-search"
-						name="blog-search"
-					/>
-					<button type="button" className="search-button">
-						Search
-					</button>
+					<div className="blog-search-wrapper">
+						<input
+							type="text"
+							placeholder="Search blog posts..."
+							className="blog-search-input"
+							id="blog-search"
+							name="blog-search"
+							value={searchTerm}
+							onChange={handleSearch}
+						/>
+						<button type="button" className="search-button">
+							Search
+						</button>
+					</div>
+					{searchTerm !== "" && (
+						<ul className="blog-search-results">
+							{filteredPosts.map((post) => (
+								<li key={post.id} className="blog-li">
+									<Link legacyBehavior href={`/blog/${post.slug}`}>
+										<a>{post.title}</a>
+									</Link>
+								</li>
+							))}
+						</ul>
+					)}
 				</div>
 
 				<ul className="blog-ul-wrapper">
 					{posts.map((post) => {
 						return (
 							<li key={post.id} className="blog-li">
-								<Link href={`/blog/${post.slug}`}>
+								<Link legacyBehavior href={`/blog/${post.slug}`}>
 									<a>{post.title}</a>
 								</Link>
 							</li>

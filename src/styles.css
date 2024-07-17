@@ -790,6 +790,22 @@ padding-bottom: 64px;
 	border-radius: 8px;
 }
 
+.blog-search-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.blog-search-input {
+	width: 70%;
+}
+
+.blog-search-results {
+	line-height: 29px;
+	padding: 0;
+	list-style: none;
+}
+
 .blog-ul-wrapper {
 	background-color: white;
 	padding: 36px;
