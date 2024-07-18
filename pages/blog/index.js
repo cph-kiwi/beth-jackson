@@ -29,15 +29,24 @@ export default function Blog({ posts }) {
 	const [filteredPosts, setFilteredPosts] = useState(posts);
 	const [isSearched, setIsSearched] = useState(false);
 
-	const handleSearch = () => {
-		const term = searchTerm.toLowerCase();
+	const suggestedSearches = [
+		"Breakfast",
+		"Broccoli",
+		"Christmas",
+		"Eggs",
+		"Salad",
+		"Pumpkin",
+	];
+
+	const handleSearch = (term = searchTerm) => {
+		const searchTerm = term.toLowerCase();
 		const filtered = posts.filter((post) => {
-			const titleMatch = post.title.toLowerCase().includes(term);
+			const titleMatch = post.title.toLowerCase().includes(searchTerm);
 			const tagMatch = post.tags.some((tag) =>
-				tag.toLowerCase().includes(term)
+				tag.toLowerCase().includes(searchTerm)
 			);
 			const ingredientMatch = post.ingredients.some((ingredient) =>
-				ingredient.toLowerCase().includes(term)
+				ingredient.toLowerCase().includes(searchTerm)
 			);
 
 			return titleMatch || tagMatch || ingredientMatch;
@@ -55,6 +64,23 @@ export default function Blog({ posts }) {
 			handleSearch();
 		}
 	};
+
+	const handleSuggestedSearch = (term) => {
+		setSearchTerm(term);
+		handleSearch(term);
+	};
+
+	const uniqueTags = [...new Set(posts.flatMap((post) => post.tags))].sort(
+		(a, b) => a.localeCompare(b)
+	);
+
+	const tagsPerColumn = Math.ceil(uniqueTags.length / 3);
+
+	const columns = [
+		uniqueTags.slice(0, tagsPerColumn),
+		uniqueTags.slice(tagsPerColumn, tagsPerColumn * 2),
+		uniqueTags.slice(tagsPerColumn * 2),
+	];
 
 	return (
 		<div className="Blog">
@@ -97,42 +123,85 @@ export default function Blog({ posts }) {
 				</p>
 
 				<div className="blog-search-container">
-					<div className="blog-search-wrapper">
-						<input
-							type="text"
-							placeholder="Search blog posts..."
-							className="blog-search-input"
-							id="blog-search"
-							name="blog-search"
-							value={searchTerm}
-							onChange={(event) => {
-								setSearchTerm(event.target.value);
-							}}
-							onKeyDown={handleKeyDown}
-						/>
-						<button
-							type="button"
-							className="search-button"
-							onClick={handleSearch}
-						>
-							Search
-						</button>
+					<div className="blog-search-container-top">
+						<div className="blog-search-wrapper">
+							<input
+								type="text"
+								placeholder="Search blog posts..."
+								className="blog-search-input"
+								id="blog-search"
+								name="blog-search"
+								value={searchTerm}
+								onChange={(event) => {
+									setSearchTerm(event.target.value);
+								}}
+								onKeyDown={handleKeyDown}
+							/>
+							<button
+								type="button"
+								className="search-button"
+								onClick={handleSearch}
+							>
+								Search
+							</button>
+						</div>
 					</div>
-					{isSearched && searchTerm !== "" && (
-						<ul className="blog-search-results">
-							{filteredPosts.length > 0 ? (
-								filteredPosts.map((post) => (
-									<li key={post.id} className="blog-li">
-										<Link legacyBehavior href={`/blog/${post.slug}`}>
-											<a>{post.title}</a>
-										</Link>
-									</li>
-								))
-							) : (
-								<li>No matching posts found</li>
+					<div className="blog-search-container-bottom">
+						<div className="blog-search-container-bottom-left">
+							{searchTerm === "" && (
+								<>
+									<h3>Suggested searches:</h3>
+									<ul className="blog-search-suggestions">
+										{suggestedSearches.map((term, index) => (
+											<li
+												className="blog-li"
+												key={index}
+												onClick={() => handleSuggestedSearch(term)}
+											>
+												{term}
+											</li>
+										))}
+									</ul>
+								</>
 							)}
-						</ul>
-					)}
+							{isSearched && searchTerm !== "" && (
+								<>
+									<h3>Search results:</h3>
+									<ul className="blog-search-results">
+										{filteredPosts.length > 0 ? (
+											filteredPosts.map((post) => (
+												<li key={post.id} className="blog-li">
+													<Link legacyBehavior href={`/blog/${post.slug}`}>
+														<a>{post.title}</a>
+													</Link>
+												</li>
+											))
+										) : (
+											<li>No matching posts found</li>
+										)}
+									</ul>
+								</>
+							)}
+						</div>
+						<div className="blog-search-container-bottom-right">
+							<h3>Tags:</h3>
+							<div className="blog-tags-columns">
+								{columns.map((column, index) => (
+									<ul key={index} className="blog-search-tags">
+										{column.map((tag) => (
+											<li
+												key={tag}
+												className="blog-li"
+												onClick={() => handleSuggestedSearch(tag)}
+											>
+												{tag}
+											</li>
+										))}
+									</ul>
+								))}
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<ul className="blog-ul-wrapper">
