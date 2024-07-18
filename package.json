@@ -11,13 +11,12 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001642",
 		"gray-matter": "^4.0.3",
 		"next": "^14.2.5",
-		"next-mdx-remote": "^2.1.4",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"react-timer-hook": "^3.0.3",
-		"use-sound": "^4.0.0"
+		"next-mdx-remote": "^5.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-timer-hook": "^3.0.7",
+		"use-sound": "^4.0.3"
 	}
 }
