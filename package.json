@@ -11,6 +11,7 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"caniuse-lite": "^1.0.30001642",
 		"gray-matter": "^4.0.3",
 		"next": "^14.2.5",
 		"next-mdx-remote": "^2.1.4",

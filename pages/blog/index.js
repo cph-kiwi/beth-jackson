@@ -82,6 +82,8 @@ export default function Blog({ posts }) {
 		uniqueTags.slice(tagsPerColumn * 2),
 	];
 
+	const highestId = Math.max(...posts.map((post) => post.id));
+
 	return (
 		<div className="Blog">
 			<Head>
@@ -215,6 +217,7 @@ export default function Blog({ posts }) {
 						);
 					})}
 				</ul>
+				<p>{highestId}</p>
 			</div>
 		</div>
 	);
