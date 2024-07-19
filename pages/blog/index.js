@@ -34,8 +34,8 @@ export default function Blog({ posts }) {
 		"Broccoli",
 		"Christmas",
 		"Eggs",
-		"Salad",
 		"Pumpkin",
+		"Salad",
 	];
 
 	const handleSearch = (term = searchTerm) => {
@@ -186,22 +186,26 @@ export default function Blog({ posts }) {
 							)}
 						</div>
 						<div className="blog-search-container-bottom-right">
-							<h3>Tags:</h3>
-							<div className="blog-tags-columns">
-								{columns.map((column, index) => (
-									<ul key={index} className="blog-search-tags">
-										{column.map((tag) => (
-											<li
-												key={tag}
-												className="blog-li"
-												onClick={() => handleSuggestedSearch(tag)}
-											>
-												{tag}
-											</li>
+							{searchTerm === "" && (
+								<>
+									<h3>Tags:</h3>
+									<div className="blog-tags-columns">
+										{columns.map((column, index) => (
+											<ul key={index} className="blog-search-tags">
+												{column.map((tag) => (
+													<li
+														key={tag}
+														className="blog-li"
+														onClick={() => handleSuggestedSearch(tag)}
+													>
+														{tag}
+													</li>
+												))}
+											</ul>
 										))}
-									</ul>
-								))}
-							</div>
+									</div>
+								</>
+							)}
 						</div>
 					</div>
 				</div>
