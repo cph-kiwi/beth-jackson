@@ -53,16 +53,7 @@ export default function Blog({ posts }) {
 		});
 
 		setFilteredPosts(filtered);
-		setIsSearched(true);
-	};
-
-	const handleKeyDown = (event) => {
-		if (searchTerm === "") {
-			setIsSearched(false);
-		}
-		if (event.key === "Enter") {
-			handleSearch();
-		}
+		setIsSearched(!!searchTerm);
 	};
 
 	const handleSuggestedSearch = (term) => {
@@ -135,9 +126,10 @@ export default function Blog({ posts }) {
 								name="blog-search"
 								value={searchTerm}
 								onChange={(event) => {
-									setSearchTerm(event.target.value);
+									const newTerm = event.target.value;
+									setSearchTerm(newTerm);
+									handleSearch(newTerm);
 								}}
-								onKeyDown={handleKeyDown}
 							/>
 							<button
 								type="button"
