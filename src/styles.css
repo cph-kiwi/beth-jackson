@@ -102,6 +102,7 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	color: white;
+	text-align: justify;
 }
 
 .intro-link-to-more a {
@@ -111,6 +112,74 @@ body {
 
 .intro-link-to-more a:hover {
 	color: var(--accent-red);
+}
+
+.silvi-container {
+	/* background: var(--lightgrey-background); */
+	padding-left: 64px;
+	padding-right: 64px;
+	padding-top: 100px;
+	padding-bottom: 200px;
+	background-size: cover;
+	display: block;
+}
+
+.silvi-h5 {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.silvi-columns-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.silvi-text-column {
+	display: flex;
+	flex-direction: column;
+
+	width: 40%;
+	justify-content: flex-start;
+	align-content: space-between;
+}
+
+.silvi-h3 {
+	font-family: "Lato", sans-serif;
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.silvi-p {
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: var(--darkgrey);
+	margin-bottom: 0;
+}
+
+.silvi-link-to-more {
+	padding-bottom: 16px;
+}
+
+.silvi-link-to-more a {
+	font-size: 14px;
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+}
+
+.silvi-link-to-more a:hover {
+	color: var(--accent-red);
+}
+
+.silvi-columns-container img {
+	width: 40%;
 }
 
 .weather-container {
