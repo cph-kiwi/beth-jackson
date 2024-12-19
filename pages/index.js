@@ -88,6 +88,7 @@ export default function App() {
 								<li className="tech-list-item">Tailwind</li>
 								<li className="tech-list-item">Redux</li>
 								<li className="tech-list-item">GitLab</li>
+								<li className="tech-list-item">Prisma</li>
 							</ul>
 							<div className="silvi-link-to-more">
 								<a href="https://www.silvi.ai/">
