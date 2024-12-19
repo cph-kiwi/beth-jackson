@@ -454,10 +454,7 @@ export default function App() {
 								<a href="https://twitter.com/cph_kiwi" target="_blank">
 									<TwitterIcon />
 								</a>
-								<a
-									href="https://bsky.app/profile/cph-kiwi.bsky.social"
-									target="_blank"
-								>
+								<a href="https://bsky.app/profile/cph.kiwi" target="_blank">
 									<BlueSkyIcon />
 								</a>
 							</div>
