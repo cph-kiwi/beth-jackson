@@ -41,7 +41,7 @@ export function Navigation() {
 						</Link>
 					</li>
 					<li className="hide">
-						<a href="/resume.pdf">Resume</a>
+						<a href="/Beth Jackson resume 27-12-24.pdf">Resume</a>
 					</li>
 					<li>
 						<Link legacyBehavior href="/blog">

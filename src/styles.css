@@ -103,6 +103,7 @@ body {
 	font-weight: 300;
 	color: white;
 	text-align: justify;
+	max-width: 400px;
 }
 
 .intro-link-to-more a {
@@ -785,8 +786,9 @@ padding-bottom: 64px;
 }
 
 .social-container {
-	display: inline-block;
+	display: flex;
 	height: 32px;
+	gap: 20px;
 }
 
 .social-container a {
@@ -796,7 +798,7 @@ padding-bottom: 64px;
 .social-container img {
 	flex: 1;
 	max-height: 100%;
-	padding-right: 20px;
+	padding-right: 0;
 }
 
 .footer {

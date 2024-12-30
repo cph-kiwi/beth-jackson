@@ -34,23 +34,9 @@ export default function App() {
 					<h1 className="intro-h1">Hi, I'm Beth.</h1>
 					<h2 className="intro-h2">Web developer.</h2>
 					<p className="intro-p">
-						I'm a passionate developer with a unique background in psychology
-						and philosophy, bringing a holistic approach to problem-solving and
-						user experience. Based in Copenhagen, I specialize in React,
-						TypeScript, and modern web development practices.
-						<br />
-						<br />
-						After completing the HackYourFuture coding bootcamp in 2021, I
-						started at Silvi.ai in April 2022, where I worked on the frontend of
-						their literature review tool. I'm now seeking new opportunities to
-						contribute my skills to impactful projects. I have also completed
-						the PD3 Danish language course.
-						<br />
-						<br />
-						I'm particularly interested in creating intuitive user interfaces
-						and maintaining clean, maintainable codebases. Always eager to
-						learn, I stay current with the latest web technologies and best
-						practices.
+						I am a Frontend developer currently building an AI-powered
+						literature review tool at Silvi.ai. Currently on the lookout for new
+						challenges.
 					</p>
 					<div className="intro-link-to-more">
 						<a href="#featured-projects">Check out my work</a>
