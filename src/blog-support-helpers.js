@@ -5,18 +5,22 @@ import fs from "fs";
 const blogDirectory = join(process.cwd(), "blog-posts");
 
 export function getBlogBySlug(slug) {
-  const fullPath = join(blogDirectory, `${slug}.mdx`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
+	const fullPath = join(blogDirectory, `${slug}.mdx`);
+	const fileContents = fs.readFileSync(fullPath, "utf8");
+	const { data, content } = matter(fileContents);
 
-  return {
-    data: { ...data, published: data.published.toJSON(), slug },
-    content,
-  };
+	return {
+		data: {
+			...data,
+			published: data.published ? data.published.toJSON() : null,
+			slug,
+		},
+		content,
+	};
 }
 
 export function getAllPosts() {
-  const files = fs.readdirSync(blogDirectory);
-  const slugs = files.map((file) => file.replace(".mdx", ""));
-  return slugs;
+	const files = fs.readdirSync(blogDirectory);
+	const slugs = files.map((file) => file.replace(".mdx", ""));
+	return slugs;
 }
