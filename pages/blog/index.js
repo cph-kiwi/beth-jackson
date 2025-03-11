@@ -25,8 +25,9 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }) {
+	const recipePosts = posts.filter((post) => post.tags.includes("Recipe"));
 	const [searchTerm, setSearchTerm] = useState("");
-	const [filteredPosts, setFilteredPosts] = useState(posts);
+	const [filteredPosts, setFilteredPosts] = useState(recipePosts);
 	const [isSearched, setIsSearched] = useState(false);
 
 	const suggestedSearches = [
@@ -40,7 +41,7 @@ export default function Blog({ posts }) {
 
 	const handleSearch = (term = searchTerm) => {
 		const searchTerm = term.toLowerCase();
-		const filtered = posts.filter((post) => {
+		const filtered = recipePosts.filter((post) => {
 			const titleMatch = post.title.toLowerCase().includes(searchTerm);
 			const tagMatch = post.tags.some((tag) =>
 				tag.toLowerCase().includes(searchTerm)
@@ -61,9 +62,9 @@ export default function Blog({ posts }) {
 		handleSearch(term);
 	};
 
-	const uniqueTags = [...new Set(posts.flatMap((post) => post.tags))].sort(
-		(a, b) => a.localeCompare(b)
-	);
+	const uniqueTags = [...new Set(posts.flatMap((post) => post.tags))]
+		.filter((tag) => tag !== "Recipe")
+		.sort((a, b) => a.localeCompare(b));
 
 	const tagsPerColumn = Math.ceil(uniqueTags.length / 3);
 
@@ -203,7 +204,7 @@ export default function Blog({ posts }) {
 				</div>
 
 				<ul className="blog-ul-wrapper">
-					{posts.map((post) => {
+					{recipePosts.map((post) => {
 						return (
 							<li key={post.id} className="blog-li">
 								<Link legacyBehavior href={`/blog/${post.slug}`}>
