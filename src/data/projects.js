@@ -2,7 +2,8 @@ export const projects = [
 	{
 		id: "dining-dames",
 		title: "Dining Dames",
-		description: `I have a group of friends who get together periodically for dinner. We found WhatsApp wasn't quite working for us to organise our dinners, so I decided to make an app to handle our activities. Users can create dinner events, handle RSVPs, see an embedded Google Map of the location, and add a profile picture of themselves.`,
+		description: `I have a group of friends who get together periodically for dinner. We found WhatsApp wasn't quite working for us to organise our dinners, so I decided to make an app to handle our activities.`,
+		introduction: `I have a group of friends who get together periodically for dinner. We found WhatsApp wasn't quite working for us to organise our dinners, so I decided to make an app to handle our activities. Users can create dinner events, handle RSVPs, see an embedded Google Map of the location, and add a profile picture of themselves. There is a wishlist of restaurants added by users, and a list of restaurants users have visited before.`,
 		technologies: [
 			"HTML",
 			"CSS",
