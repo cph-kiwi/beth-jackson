@@ -7,8 +7,9 @@ import { MDXRemote } from "next-mdx-remote";
 import { getAllPosts, getBlogBySlug } from "../../src/blog-support-helpers";
 import { Timer } from "../../src/components/Timer";
 import { BlogTextWrapper } from "../../src/components/BlogTextWrapper";
+import { ClickableTags } from "../../src/components/ClickableTags";
 
-const components = { Timer, BlogTextWrapper };
+const components = { Timer, BlogTextWrapper, ClickableTags };
 
 export async function getStaticProps({ params }) {
 	const { data, content } = getBlogBySlug(params.slug);

@@ -304,6 +304,13 @@ body {
   */
 }
 
+.blog-text-wrapper a:link {
+	color: inherit;
+	/*
+  text-decoration: none;
+  */
+}
+
 .blog-text-wrapper p > a:visited {
 	color: inherit;
 	/*
@@ -311,7 +318,18 @@ body {
   */
 }
 
+.blog-text-wrapper a:visited {
+	color: inherit;
+	/*
+  text-decoration: none;
+  */
+}
+
 .blog-text-wrapper p > a:hover {
+	text-decoration: underline;
+}
+
+.blog-text-wrapper a:hover {
 	text-decoration: underline;
 }
 

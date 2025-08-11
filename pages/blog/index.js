@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Navigation } from "../../src/Navigation";
 import { getBlogBySlug, getAllPosts } from "../../src/blog-support-helpers";
 
@@ -29,6 +30,16 @@ export default function Blog({ posts }) {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [filteredPosts, setFilteredPosts] = useState(recipePosts);
 	const [isSearched, setIsSearched] = useState(false);
+	const router = useRouter();
+
+	// Handle URL query parameters for tags
+	useEffect(() => {
+		if (router.query.tag) {
+			const tag = router.query.tag;
+			setSearchTerm(tag);
+			handleSearch(tag);
+		}
+	}, [router.query.tag]);
 
 	const suggestedSearches = [
 		"Breakfast",
@@ -40,21 +51,21 @@ export default function Blog({ posts }) {
 	];
 
 	const handleSearch = (term = searchTerm) => {
-		const searchTerm = term.toLowerCase();
+		const searchTermLower = term.toLowerCase();
 		const filtered = recipePosts.filter((post) => {
-			const titleMatch = post.title.toLowerCase().includes(searchTerm);
+			const titleMatch = post.title.toLowerCase().includes(searchTermLower);
 			const tagMatch = post.tags.some((tag) =>
-				tag.toLowerCase().includes(searchTerm)
+				tag.toLowerCase().includes(searchTermLower)
 			);
 			const ingredientMatch = post.ingredients.some((ingredient) =>
-				ingredient.toLowerCase().includes(searchTerm)
+				ingredient.toLowerCase().includes(searchTermLower)
 			);
 
 			return titleMatch || tagMatch || ingredientMatch;
 		});
 
 		setFilteredPosts(filtered);
-		setIsSearched(!!searchTerm);
+		setIsSearched(!!term);
 	};
 
 	const handleSuggestedSearch = (term) => {
