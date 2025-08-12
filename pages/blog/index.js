@@ -48,6 +48,7 @@ export default function Blog({ posts }) {
 		"Eggs",
 		"Pumpkin",
 		"Salad",
+		"Drinks",
 	];
 
 	const handleSearch = (term = searchTerm) => {
