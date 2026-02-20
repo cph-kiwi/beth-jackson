@@ -462,6 +462,12 @@ body {
 	margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+/* Loose lists (blank line in markdown) put <p> inside <li>, which adds height and misaligns the bullet */
+.blog-text-wrapper > ul li p {
+	margin: 0;
+	display: inline;
+}
+
 .timer {
 	border: 1px solid #142850;
 	width: 85%;
