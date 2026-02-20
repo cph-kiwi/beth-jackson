@@ -58,7 +58,7 @@ export default function BlogPost({ source, meta }) {
 			<Navigation />
 			<div className="blog-post-wrapper">
 				<div className="blog-post-contents">
-					{<MDXRemote {...source} components={components} />}
+					{<MDXRemote {...source} components={components} scope={meta} />}
 				</div>
 			</div>
 		</div>

@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export const ClickableTags = ({ tags }) => {
+export const ClickableTags = ({ tags = [] }) => {
 	return (
 		<div className="blog-text-wrapper">
 			<h3>Tags</h3>
 			<ul>
-				{tags.map((tag) => (
+				{(tags || []).map((tag) => (
 					<li key={tag}>
 						<Link
 							legacyBehavior
